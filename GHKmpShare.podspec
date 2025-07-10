@@ -18,24 +18,13 @@ Pod::Spec.new do |s|
 
   s.source_files = 'GHKmpShare/Classes/**/*'
 
-  #- 此参数用于注册组件 -#
-  #s.info_plist = { 'GHModular' => 'GHxxxxxxx.GHxxxxxModule' }
+  s.vendored_frameworks = ['Shared.xcframework']
 
-  #- 推荐这种 -#
-  # s.resource_bundles = { 'GHKmpShare' => ['GHKmpShare/*.xcassets'] }
+  s.pod_target_xcconfig = {
+    'DEFINES_MODULE' => 'YES',
+    'VALID_ARCHS' => 'arm64 x86_64'
+  }
 
-  # s.resources  = 'GHKmpShare/**/*.{storyboard,xib}', 'GHKmpShare/Assets/*'
-  # s.resources = 'Resources/*.png'
-
-  # s.preserve_paths = 'FilesToSave', 'MoreFilesToSave'
-
-  # s.framework  = 'SomeFramework'
-  # s.frameworks = 'SomeFramework', 'AnotherFramework'
-
-  # s.library   = 'iconv'
-  # s.libraries = 'iconv', 'xml2'
-
-  # s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
-  # s.dependency 'AFNetworking'
+  s.dependency 'HandyJSON'
 
 end

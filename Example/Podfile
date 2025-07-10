@@ -1,11 +1,17 @@
-platform :ios, '13.0'
-use_frameworks!
+platform:ios,'13.0'
+use_frameworks! :linkage => :static
+#use_modular_headers!
+install! 'cocoapods',
+  :warn_for_unused_master_specs_repo => false,
+  :preserve_pod_file_structure => true,
+  :deterministic_uuids => false
 
 source 'git@github.com:GoveeHomeApp/GHSpecs.git'
 
 target 'GHKmpShare_Example' do
 
   pod 'GHKmpShare', :path => '../'
+  pod 'HandyJSON', :git => 'git@github.com:alibaba/HandyJSON.git', :tag => '5.0.2'
 
 end
 
