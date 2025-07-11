@@ -24,17 +24,18 @@ public class KMPSharedBiz: NSObject {
     /// 当前KMP功能是否支持此SKU的此场景 -
     public func isSupportSceneBiz(param: [String: Any]?, device: [String: Any]?) -> Bool {
         if let dto = KmpBizDto.deserialize(from: param), let dv = KmpDeviceDto.deserialize(from: device) {
+            // 判断静态场景不走KMP
+            if dto.base64String.isEmpty && dto.sceneType == 0 {
+                return false
+            }
             let bytes = Data(base64String: dto.base64String) ?? Data()
             var extString = ""
             if let dict = dv.deviceExt, let jsonData = try?JSONSerialization.data(withJSONObject: dict, options: []) {
                 extString = String(data: jsonData, encoding: .utf8) ?? ""
             }
             let deviceInfo = KmpDeviceInfo(sku: dv.sku, name: dv.deviceName, device: dv.deviceID, goodsType: Int32(dv.goodsType), softVersion: dv.versionSoft, hardVersion: dv.versionHard, pactType: Int32(dv.pactType), pactCode: Int32(dv.pactCode), ext: extString)
-            // 当前就是这个场景 return
-//            if let current = self.currentScene, let impl = currentKmpProtocol, current.dto.scenesType == dto.scenesType && current.device.deviceID == dv.deviceID && current.device.sku == dv.sku {
-//                return true
-//            }
-            if let pt = KmpProtocolHelper.shared.parse(sceneType: Int32(dto.scenesType), effectBytes: bytes.toKotlinByteArray(), info: deviceInfo) {
+
+            if let pt = KmpProtocolHelper.shared.parse(sceneType: Int32(dto.sceneType), effectBytes: bytes.toKotlinByteArray(), info: deviceInfo) {
                 self.currentKmpProtocol = pt
                 self.currentScene = (dto, dv)
                 return true
@@ -121,16 +122,16 @@ public class KMPSharedBiz: NSObject {
             // 转换speedInfo
             if let speedInfo = cls?.speedInfo {
                 let speedRange = speedInfo.speedRange?.toSwiftIntArray()
-                speedVo = KmpSpeedVo(speedType: Int(speedInfo.speedType), 
-                               defSpeed: Int(speedInfo.defSpeed), 
-                               speedRange: speedRange, 
+                speedVo = KmpSpeedVo(speedType: Int(speedInfo.speedType),
+                               defSpeed: Int(speedInfo.defSpeed),
+                               speedRange: speedRange,
                                speedGearCount: Int(speedInfo.speedGearCount))
             }
             
             // 转换directionInfo
             if let directionInfo = cls?.directionInfo {
                 let supportDirections = directionInfo.supportDirections?.toSwiftIntArray()
-                directionVo = KmpDirectionVo(defIndex: Int(directionInfo.defIndex), 
+                directionVo = KmpDirectionVo(defIndex: Int(directionInfo.defIndex),
                                            supportDirections: supportDirections)
             }
             

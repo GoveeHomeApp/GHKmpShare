@@ -69,6 +69,9 @@ public class KmpBizDto: NSObject, HandyJSON {
     public var scenesType: Int = -1
     public var speedInfo: [String: Any]?
     
+    public var sceneType: Int = -1
+    public var sceneCode: Int = -1
+    
     public required override init() { }
 }
 
