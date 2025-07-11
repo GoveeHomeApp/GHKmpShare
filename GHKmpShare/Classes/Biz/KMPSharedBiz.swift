@@ -93,7 +93,7 @@ public class KMPSharedBiz: NSObject {
     }
     
     /// 调整速度（(注意：档位时传index，非档位传值)
-    public func changeDirection(value: Int = 0, param: [String: Any]?, device: [String: Any]?) -> String? {
+    public func changeSpeed(value: Int = 0, param: [String: Any]?, device: [String: Any]?) -> String? {
         var res: String? = nil
         if self.isSupportSceneBiz(param: param, device: device), let pt = self.currentKmpProtocol, let bizParam = self.currentScene?.dto, let speedConfig = bizParam.speedInfo?["config"] as? String {
             pt.updateSpeed(speedOrIndex: KotlinInt(int: Int32(value)), config: speedConfig)
