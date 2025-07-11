@@ -10,11 +10,12 @@ import Shared
 import HandyJSON
 
 @objcMembers
+/** KMP业务中间层
+ * 只接受dict类型传入
+ * 结构中包含关键字段就可以
+ */
 public class KMPSharedBiz: NSObject {
-    /** KMP业务中间层
-     * 只接受dict类型传入
-     *
-     */
+
     public private(set) static var shared = KMPSharedBiz()
     
     private var currentScene: (dto: KmpBizDto, device: KmpDeviceDto)? = nil
@@ -46,7 +47,7 @@ public class KMPSharedBiz: NSObject {
             return false
         }
     }
-    
+    /// 获取当前场景的效果Data
     public func getCurrentBytes(param: [String: Any]?, device: [String: Any]?) -> String? {
         var res: String? = nil
         if self.isSupportSceneBiz(param: param, device: device) {
@@ -63,7 +64,7 @@ public class KMPSharedBiz: NSObject {
         }
         return res
     }
-    
+    /// 调整颜色组
     public func changeColor(h: Float, param: [String: Any]?, device: [String: Any]?) -> String? {
         var res: String? = nil
         if self.isSupportSceneBiz(param: param, device: device), let pt = self.currentKmpProtocol {
@@ -72,7 +73,7 @@ public class KMPSharedBiz: NSObject {
         }
         return res
     }
-    
+    /// 重置/恢复颜色组
     public func resetColor(param: [String: Any]?, device: [String: Any]?) -> String? {
         var res: String? = nil
         if self.isSupportSceneBiz(param: param, device: device), let pt = self.currentKmpProtocol {
@@ -92,7 +93,7 @@ public class KMPSharedBiz: NSObject {
         return res
     }
     
-    /// 调整速度（(注意：档位时传index，非档位传值)
+    /// 调整速度（注意：档位时传index，非档位传值)
     public func changeSpeed(value: Int = 0, param: [String: Any]?, device: [String: Any]?) -> String? {
         var res: String? = nil
         if self.isSupportSceneBiz(param: param, device: device), let pt = self.currentKmpProtocol, let bizParam = self.currentScene?.dto, let speedConfig = bizParam.speedInfo?["config"] as? String {
@@ -111,7 +112,9 @@ public class KMPSharedBiz: NSObject {
         }
         return nil
     }
-    
+    /**
+     * 获取场景速度、方向信息
+     */
     public func getSceneConfig(param: [String: Any]?, device: [String: Any]?) -> KmpConfigVo? {
         if self.isSupportSceneBiz(param: param, device: device), let pt = self.currentKmpProtocol, let bizParam = self.currentScene?.dto, let speedConfig = bizParam.speedInfo?["config"] as? String {
             let cls = pt.getSceneConfigInfo(config: speedConfig)
