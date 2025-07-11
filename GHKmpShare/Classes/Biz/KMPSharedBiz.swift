@@ -138,7 +138,9 @@ public class KMPSharedBiz: NSObject {
             let configVo = KmpConfigVo()
             configVo.speedInfo = speedVo
             configVo.directionInfo = directionVo
-            
+            if let directionIdx = bizParam.speedInfo?["directionIndex"] as? Int {
+                configVo.directionInfo?.selIndex = directionIdx
+            }
             return configVo
         }
         return nil

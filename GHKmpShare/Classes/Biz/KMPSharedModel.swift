@@ -30,9 +30,13 @@ public class KmpConfigVo:NSObject, HandyJSON {
 
 @objcMembers
 public class KmpSpeedVo:NSObject, HandyJSON {
+    /// 0：档位调节 1：无级变速
     var speedType: Int = 0
     var defSpeed: Int = 0
     var speedRange: [Int]? = nil
+    var speedRangeTuple: (low: Int, high: Int) {
+        (speedRange?.first ?? 0, speedRange?.last ?? 100)
+    }
     var speedGearCount: Int = 0
     
     public required override init() { }
@@ -48,9 +52,9 @@ public class KmpSpeedVo:NSObject, HandyJSON {
 
 @objcMembers
 public class KmpDirectionVo:NSObject, HandyJSON {
-    var defIndex: Int = 0
+    var defIndex: Int = -1
     var supportDirections: [Int]? = nil
-    
+    var selIndex: Int = -1
     public required override init() { }
     
     convenience init(defIndex: Int, supportDirections: [Int]?) {
