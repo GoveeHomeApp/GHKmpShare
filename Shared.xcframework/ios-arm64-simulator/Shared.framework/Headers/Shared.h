@@ -1165,6 +1165,7 @@ __attribute__((swift_name("KmpH6020Protocol")))
 @property SharedDangYang * _Nullable dangYang __attribute__((swift_name("dangYang")));
 @property SharedDuiJi4ShangXia * _Nullable duiJi4ShangXia __attribute__((swift_name("duiJi4ShangXia")));
 @property SharedDuiJi4XingZhuang * _Nullable duiJi4XingZhuang __attribute__((swift_name("duiJi4XingZhuang")));
+@property SharedByte * _Nullable firstByte __attribute__((swift_name("firstByte")));
 @property SharedHuXi * _Nullable huXi __attribute__((swift_name("huXi")));
 @property SharedHuoYan * _Nullable huoYan __attribute__((swift_name("huoYan")));
 @property SharedJianBian * _Nullable jianBian __attribute__((swift_name("jianBian")));
