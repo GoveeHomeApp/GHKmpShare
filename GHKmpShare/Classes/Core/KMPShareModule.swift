@@ -18,6 +18,7 @@ class KMPShareModule: GHModular {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
         KmpImageConverterManager.shared.setProcessor(processor: IOSImageProcessorForKt())
+        KmpLogManager.shared.setProcessor(processor: IOSLogProcessorForKt())
         
         return true
     }
