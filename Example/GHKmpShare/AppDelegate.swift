@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GHConnector
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if let path = Bundle.main.path(forResource: nil, ofType: "plist") {
+            print(path)
+            if let dict = NSMutableDictionary(contentsOfFile: path) as? Dictionary<String,Any> {
+                let array = dict["GHModules"]
+                GHModuleManager.registerModule(class: array as! [String])
+                GHModuleManager.registerModuleStore(GHModuleStore.shared())
+            }
+        }
         return true
     }
 

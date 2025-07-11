@@ -17,6 +17,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'git@github.com:GoveeHomeApp/GHKmpShare.git', :tag => s.version.to_s }
 
   s.source_files = 'GHKmpShare/Classes/**/*'
+  
+  s.info_plist = { 'GHModular' => 'GHKmpShare.KMPShareModule' }
 
   s.vendored_frameworks = ['Shared.xcframework']
 
@@ -26,5 +28,6 @@ Pod::Spec.new do |s|
   }
 
   s.dependency 'HandyJSON'
+  s.dependency 'GHConnector'
 
 end
