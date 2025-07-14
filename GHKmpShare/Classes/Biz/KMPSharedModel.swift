@@ -88,7 +88,7 @@ public class KmpBizDto: NSObject, HandyJSON {
     /// 速度/方向信息
     public var speedInfo: [String: Any]?
     /// 效果类型
-    public var sceneType: Int = -1
+    public var configType: Int = -1
     /// 场景code （另一种表现形式！！！）
     public var sceneCode: Int = -1
     

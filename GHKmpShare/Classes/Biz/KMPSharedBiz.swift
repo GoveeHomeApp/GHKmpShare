@@ -26,7 +26,7 @@ public class KMPSharedBiz: NSObject {
     public func isSupportSceneBiz(param: [String: Any]?, device: [String: Any]?) -> Bool {
         if let dto = KmpBizDto.deserialize(from: param), let dv = KmpDeviceDto.deserialize(from: device) {
             // 判断静态场景不走KMP
-            if dto.base64String.isEmpty && dto.sceneType == 0 {
+            if dto.base64String.isEmpty && dto.configType == 0 {
                 return false
             }
             let bytes = Data(base64String: dto.base64String) ?? Data()
@@ -36,7 +36,7 @@ public class KMPSharedBiz: NSObject {
             }
             let deviceInfo = KmpDeviceInfo(sku: dv.sku, name: dv.deviceName, device: dv.deviceID, goodsType: Int32(dv.goodsType), softVersion: dv.versionSoft, hardVersion: dv.versionHard, pactType: Int32(dv.pactType), pactCode: Int32(dv.pactCode), ext: extString)
 
-            if let pt = KmpProtocolHelper.shared.parse(sceneType: Int32(dto.sceneType), effectBytes: bytes.toKotlinByteArray(), info: deviceInfo) {
+            if let pt = KmpProtocolHelper.shared.parse(sceneType: Int32(dto.configType), effectBytes: bytes.toKotlinByteArray(), info: deviceInfo) {
                 self.currentKmpProtocol = pt
                 self.currentScene = (dto, dv)
                 return true
@@ -112,6 +112,26 @@ public class KMPSharedBiz: NSObject {
         }
         return nil
     }
+    /*
+     全参数变更
+     */
+    public func changeAll(speedVal: Int? = nil, directionVal: Int? = nil, colorH: Int? = nil, param: [String: Any]?, device: [String: Any]?) -> String? {
+        if self.isSupportSceneBiz(param: param, device: device), let pt = self.currentKmpProtocol {
+            if let spd = speedVal, let bizParam = self.currentScene?.dto, let speedConfig = bizParam.speedInfo?["config"] as? String  {
+                pt.updateSpeed(speedOrIndex: KotlinInt(int: Int32(spd)), config: speedConfig)
+            }
+            if let dir = directionVal, let bizParam = self.currentScene?.dto, let speedConfig = bizParam.speedInfo?["config"] as? String {
+                pt.updateDirection(directionOrIndex: KotlinInt(int: Int32(dir)), config: speedConfig)
+            }
+            if let h = colorH {
+                pt.updateColor(h: Float(h))
+            }
+            return _getCurrentBytes()
+        } else {
+            return nil
+        }
+    }
+    
     /**
      * 获取场景速度、方向信息
      */
