@@ -10,8 +10,11 @@ import HandyJSON
 import Shared
 
 @objcMembers
+/// 场景-颜色页面模型
 public class KmpToneColorsVo:NSObject, HandyJSON {
+    /// 底色h
     public var h: Int = 0
+    /// 对应颜色组
     public var colors: [Int] = []
     public required override init() { }
     public convenience init(h: Int, colors: [Int]) {
@@ -22,8 +25,11 @@ public class KmpToneColorsVo:NSObject, HandyJSON {
 }
 
 @objcMembers
+/// 场景-速度与方向解析页面模型
 public class KmpConfigVo:NSObject, HandyJSON {
+    /// kmp速度信息
     public var speedInfo: KmpSpeedVo?
+    /// kmp方向信息
     public var directionInfo: KmpDirectionVo?
     public required override init() { }
 }
@@ -32,11 +38,15 @@ public class KmpConfigVo:NSObject, HandyJSON {
 public class KmpSpeedVo:NSObject, HandyJSON {
     /// 0：档位调节 1：无级变速
     public var speedType: Int = 0
+    /// 默认速度 （调档时为 对应档位，无极调速对应具体值）
     public var defSpeed: Int = 0
-    public var speedRange: [Int]? = nil
+    /// 无极调速速度范围
+    var speedRange: [Int]? = nil
+    /// 无极调速便捷获取速度范围
     public var speedRangeTuple: (low: Int, high: Int) {
         (speedRange?.first ?? 0, speedRange?.last ?? 100)
     }
+    /// 档位调节-档位个数
     public var speedGearCount: Int = 0
     
     public required override init() { }
@@ -52,8 +62,11 @@ public class KmpSpeedVo:NSObject, HandyJSON {
 
 @objcMembers
 public class KmpDirectionVo:NSObject, HandyJSON {
+    /// 默认方向idx
     public var defIndex: Int = -1
+    /// 支持的所有的方向的code
     public var supportDirections: [Int]? = nil
+    /// 注意当前默认的值有问题！！！
     public var selIndex: Int = -1
     public required override init() { }
     
@@ -68,12 +81,15 @@ public class KmpDirectionVo:NSObject, HandyJSON {
 
 @objcMembers
 public class KmpBizDto: NSObject, HandyJSON {
-    
+    /// 效果字符串
     public var base64String: String = ""
+    /// 场景code
     public var scenesType: Int = -1
+    /// 速度/方向信息
     public var speedInfo: [String: Any]?
-    
+    /// 效果类型
     public var sceneType: Int = -1
+    /// 场景code （另一种表现形式！！！）
     public var sceneCode: Int = -1
     
     public required override init() { }
