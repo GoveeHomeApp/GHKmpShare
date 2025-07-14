@@ -11,10 +11,10 @@ import Shared
 
 @objcMembers
 public class KmpToneColorsVo:NSObject, HandyJSON {
-    var h: Float = 0.0
-    var colors: [Int] = []
+    public var h: Int = 0
+    public var colors: [Int] = []
     public required override init() { }
-    public convenience init(h: Float, colors: [Int]) {
+    public convenience init(h: Int, colors: [Int]) {
         self.init()
         self.h = h
         self.colors = colors
@@ -23,25 +23,25 @@ public class KmpToneColorsVo:NSObject, HandyJSON {
 
 @objcMembers
 public class KmpConfigVo:NSObject, HandyJSON {
-    var speedInfo: KmpSpeedVo?
-    var directionInfo: KmpDirectionVo?
+    public var speedInfo: KmpSpeedVo?
+    public var directionInfo: KmpDirectionVo?
     public required override init() { }
 }
 
 @objcMembers
 public class KmpSpeedVo:NSObject, HandyJSON {
     /// 0：档位调节 1：无级变速
-    var speedType: Int = 0
-    var defSpeed: Int = 0
-    var speedRange: [Int]? = nil
-    var speedRangeTuple: (low: Int, high: Int) {
+    public var speedType: Int = 0
+    public var defSpeed: Int = 0
+    public var speedRange: [Int]? = nil
+    public var speedRangeTuple: (low: Int, high: Int) {
         (speedRange?.first ?? 0, speedRange?.last ?? 100)
     }
-    var speedGearCount: Int = 0
+    public var speedGearCount: Int = 0
     
     public required override init() { }
     
-    convenience init(speedType: Int, defSpeed: Int, speedRange: [Int]?, speedGearCount: Int) {
+    public convenience init(speedType: Int, defSpeed: Int, speedRange: [Int]?, speedGearCount: Int) {
         self.init()
         self.speedType = speedType
         self.defSpeed = defSpeed
@@ -52,12 +52,12 @@ public class KmpSpeedVo:NSObject, HandyJSON {
 
 @objcMembers
 public class KmpDirectionVo:NSObject, HandyJSON {
-    var defIndex: Int = -1
-    var supportDirections: [Int]? = nil
-    var selIndex: Int = -1
+    public var defIndex: Int = -1
+    public var supportDirections: [Int]? = nil
+    public var selIndex: Int = -1
     public required override init() { }
     
-    convenience init(defIndex: Int, supportDirections: [Int]?) {
+    public convenience init(defIndex: Int, supportDirections: [Int]?) {
         self.init()
         self.defIndex = defIndex
         self.supportDirections = supportDirections

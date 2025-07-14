@@ -107,7 +107,7 @@ public class KMPSharedBiz: NSObject {
      */
     public func toneColorInfo(param: [String: Any]?, device: [String: Any]?) -> [KmpToneColorsVo]? {
         if self.isSupportSceneBiz(param: param, device: device), let pt = self.currentKmpProtocol {
-            let cls = pt.getToneColors().compactMap { KmpToneColorsVo(h: Float($0.h), colors: $0.toneColorList.map { $0.toSwiftInt()})}
+            let cls = pt.getToneColors().compactMap { KmpToneColorsVo(h: Int(Float($0.h)), colors: $0.toneColorList.map { $0.toSwiftInt()})}
             return cls
         }
         return nil
