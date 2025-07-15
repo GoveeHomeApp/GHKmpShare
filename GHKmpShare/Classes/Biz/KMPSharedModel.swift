@@ -12,6 +12,8 @@ import Shared
 @objcMembers
 /// 场景-颜色页面模型
 public class KmpToneColorsVo:NSObject, HandyJSON {
+    /// 基色颜色
+    public var baseColor: Int? = nil
     /// 底色h
     public var h: Int = 0
     /// 对应颜色组
@@ -41,7 +43,7 @@ public class KmpSpeedVo:NSObject, HandyJSON {
     /// 默认速度 （调档时为 对应档位，无极调速对应具体值）
     public var defSpeed: Int = 0
     /// 无极调速速度范围
-    var speedRange: [Int]? = nil
+    public var speedRange: [Int]? = nil
     /// 无极调速便捷获取速度范围
     public var speedRangeTuple: (low: Int, high: Int) {
         (speedRange?.first ?? 0, speedRange?.last ?? 100)

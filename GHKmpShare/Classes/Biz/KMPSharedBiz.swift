@@ -107,7 +107,11 @@ public class KMPSharedBiz: NSObject {
      */
     public func toneColorInfo(param: [String: Any]?, device: [String: Any]?) -> [KmpToneColorsVo]? {
         if self.isSupportSceneBiz(param: param, device: device), let pt = self.currentKmpProtocol {
-            let cls = pt.getToneColors().compactMap { KmpToneColorsVo(h: Int(Float($0.h)), colors: $0.toneColorList.map { $0.toSwiftInt()})}
+            let info: KmpToneColorListInfo = pt.getToneColors()
+            let cls = info.list.compactMap { KmpToneColorsVo(h: Int(Float($0.h)), colors: $0.toneColorList.map { $0.toSwiftInt()})}
+            if let baseColor = info.baseColor {
+                cls.forEach { $0.baseColor = Int(truncating: baseColor) }
+            }
             return cls
         }
         return nil
@@ -136,9 +140,17 @@ public class KMPSharedBiz: NSObject {
      * 获取场景速度、方向信息
      */
     public func getSceneConfig(param: [String: Any]?, device: [String: Any]?) -> KmpConfigVo? {
-        if self.isSupportSceneBiz(param: param, device: device), let pt = self.currentKmpProtocol, let bizParam = self.currentScene?.dto, let speedConfig = bizParam.speedInfo?["config"] as? String {
-            let cls = pt.getSceneConfigInfo(config: speedConfig)
+        if self.isSupportSceneBiz(param: param, device: device), let dv = KmpDeviceDto.deserialize(from: device), let bizParam = self.currentScene?.dto, let speedConfig = bizParam.speedInfo?["config"] as? String {
             
+            var extString = ""
+            
+            if let dict = dv.deviceExt, let jsonData = try?JSONSerialization.data(withJSONObject: dict, options: []) {
+                extString = String(data: jsonData, encoding: .utf8) ?? ""
+            }
+            
+            let deviceInfo = KmpDeviceInfo(sku: dv.sku, name: dv.deviceName, device: dv.deviceID, goodsType: Int32(dv.goodsType), softVersion: dv.versionSoft, hardVersion: dv.versionHard, pactType: Int32(dv.pactType), pactCode: Int32(dv.pactCode), ext: extString)
+            
+            let cls = KmpProtocolHelper.shared.getSceneConfigInfo(config: speedConfig, info: deviceInfo)
             var speedVo: KmpSpeedVo? = nil
             var directionVo: KmpDirectionVo? = nil
             
