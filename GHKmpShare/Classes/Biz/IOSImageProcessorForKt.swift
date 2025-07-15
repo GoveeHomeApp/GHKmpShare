@@ -3,6 +3,21 @@ import Shared
 
 class IOSImageProcessorForKt: KmpImageProcessor {
     
+//    func saveImageToTemp(image: UIImage, fileName: String) -> URL? {
+//        guard let data = image.jpegData(compressionQuality: 0.8) else { return nil }
+//        
+//        let tempDir = FileManager.default.temporaryDirectory
+//        let fileURL = tempDir.appendingPathComponent("\(fileName).png")
+//        
+//        do {
+//            try data.write(to: fileURL)
+//            return fileURL
+//        } catch {
+//            print("保存失败: \(error.localizedDescription)")
+//            return nil
+//        }
+//    }
+    
     func convertPngBytesToColors(pngBytes: KotlinByteArray) -> [KotlinInt] {
         // 正确的数据转换方式
         var data = Data()

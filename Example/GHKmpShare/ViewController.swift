@@ -29,9 +29,9 @@ class ViewController: UIViewController {
             "versionSoft": "1.00.33",
             "deviceName": "sss"
         ]
-        let resp = KMPSharedBiz.shared.getSceneConfig(param: param, device: device)
-        
-        let re = KMPSharedBiz.shared.changeAll(speedVal: 50, directionVal: 1, colorH: 20, param: param, device: device)
+//        let resp = KMPSharedBiz.shared.getSceneConfig(param: param, device: device)
+//        
+//        let re = KMPSharedBiz.shared.changeAll(speedVal: 50, directionVal: 1, colorH: 20, param: param, device: device)
         
         let r = KMPSharedBiz.shared.toneColorInfo(param: param, device: device)
         
