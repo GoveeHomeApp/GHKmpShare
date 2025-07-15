@@ -84,11 +84,13 @@ public class KmpDirectionVo:NSObject, HandyJSON {
 @objcMembers
 public class KmpBizDto: NSObject, HandyJSON {
     /// 效果字符串
-    public var base64String: String = ""
+    public var base64: String = ""
     /// 场景code
     public var scenesType: Int = -1
     /// 速度/方向信息
     public var speedInfo: [String: Any]?
+    /// 速度config
+    public var config: String = ""
     /// 效果类型
     public var configType: Int = -1
     /// 场景code （另一种表现形式！！！）
