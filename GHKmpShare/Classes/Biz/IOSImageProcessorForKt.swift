@@ -35,7 +35,7 @@ class IOSImageProcessorForKt: KmpImageProcessor {
         
         context?.draw(cgImage, in: CGRect(x: 0, y: 0, width: width, height: height))
         
-        return pixelData.map { KotlinInt(value: Int32($0)) }
+        return pixelData.map { KotlinInt(value: Int32(bitPattern: $0)) }
     }
     
     func convertColorsToPngBytes(colors: [KotlinInt], width: Int32, height: Int32) -> KotlinByteArray {
@@ -45,7 +45,7 @@ class IOSImageProcessorForKt: KmpImageProcessor {
         let bytesPerPixel = 4
         let bytesPerRow = bytesPerPixel * w
         
-        var pixelData = colors.map { UInt32($0.int32Value) }
+        var pixelData = colors.map { Int32($0.int32Value) }
         
         guard let context = CGContext(data: &pixelData,
                                      width: w,

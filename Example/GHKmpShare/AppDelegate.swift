@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 GHModuleManager.registerModuleStore(GHModuleStore.shared())
             }
         }
+        let _ = GHModuleManager.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         return true
     }
 
