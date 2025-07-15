@@ -144,8 +144,8 @@ public class KMPSharedBiz: NSObject {
      * 获取场景速度、方向信息
      */
     public func getSceneConfig(param: [String: Any]?, device: [String: Any]?) -> KmpConfigVo? {
-        if self.isSupportSceneBiz(param: param, device: device), let dv = KmpDeviceDto.deserialize(from: device), let bizParam = self.currentScene?.dto, let speedConfig = bizParam.speedInfo?["config"] as? String {
-            
+        if self.isSupportSceneBiz(param: param, device: device), let dv = KmpDeviceDto.deserialize(from: device), let bizParam = self.currentScene?.dto {
+            let speedConfig = bizParam.config
             var extString = ""
             
             if let dict = dv.deviceExt, let jsonData = try?JSONSerialization.data(withJSONObject: dict, options: []) {
