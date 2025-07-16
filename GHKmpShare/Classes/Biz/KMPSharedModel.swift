@@ -89,12 +89,15 @@ public class KmpBizDto: NSObject, HandyJSON {
     public var scenesType: Int = -1
     /// 速度/方向信息
     public var speedInfo: [String: Any]?
-    /// 速度config
+    /// 速度config -- 废弃字段
+    @available(*, deprecated, renamed: "speedInfo.config", message: "更改取值位置")
     public var config: String = ""
     /// 效果类型
     public var configType: Int = -1
     /// 场景code （另一种表现形式！！！）
     public var sceneCode: Int = -1
+    
+    public var speedIndex: Int = 0
     
     public required override init() { }
 }
