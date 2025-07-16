@@ -6,7 +6,7 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class SharedKmpProtocolHelper, SharedKmpSceneConfigInfo, SharedKmpDeviceInfo, SharedKotlinByteArray, SharedKmpGoodsType, SharedKmpInfoChecker, SharedKmpSku, SharedKmpBrightModeCompanion, SharedKotlinIntArray, SharedKmpColorListInfo, SharedKmpDeviceInfoCompanion, SharedKmpH6020DirectionCompanion, SharedKmpH6020Speed, SharedKmpH6020Direction, SharedKmpH6020DirectionSpeedInfoCompanion, SharedKmpH6020DirectionSpeedInfo, SharedKmpH6020GraffitiSceneSpeedBeanExt, SharedKmpH6020GraffitiSceneSpeedBeanCompanion, SharedKmpH6020GraffitiSceneSpeedBeanExtCompanion, SharedKmpH6020SpeedCompanion, SharedKmpH70CXSpeedModeCompanion, SharedKmpSceneSpeedInfo, SharedKmpSceneDirectionInfo, SharedKmpSceneSpeedInfoCompanion, SharedKmpSpeedModeCompanion, SharedKmpBrightMode, SharedKmpToneColorInfo, SharedKmpToneColorListInfo, SharedAbsKmpProtocol, SharedKmpCommonProtocol0x00Companion, SharedKmpCommonProtocol0x00, SharedKmpRgbICGraffitiShareProtocol0x08Companion, SharedKmpRgbICGraffitiShareProtocol0x08, SharedKotlinTriple<__covariant A, __covariant B, __covariant C>, SharedKmpCellGraffitiDataNewProtocolCompanion, SharedKmpLayersInfo, SharedKmpCellGraffitiDataNewProtocol, SharedKotlinArray<T>, SharedKmpDiyGraffitiV2, SharedKmpGraffitiDefaultData, SharedKmpGraffitiSendDataCompanion, SharedKmpLayerBase, SharedKmpLayerPaintingData, SharedMoveLayer, SharedTextGravity, SharedTextSize, SharedLayerTextData, SharedKotlinEnumCompanion, SharedKotlinEnum<E>, SharedKmpH6020AbsSub, SharedKmpH6020CaiHongCompanion, SharedKmpH6020CaiHong, SharedKmpH6020CaiQiangCompanion, SharedKmpH6020CaiQiang, SharedKmpH6020CellGraffitiDataNewProtocolCompanion, SharedKmpH6020CellGraffitiDataNewProtocol, SharedKmpH6020DangYangCompanion, SharedKmpH6020DangYang, SharedKmpH6020DuiJi4ShangXiaCompanion, SharedKmpH6020DuiJi4ShangXia, SharedKmpH6020DuiJi4XingZhuangCompanion, SharedKmpH6020DuiJi4XingZhuang, SharedKmpH6020HuXiCompanion, SharedKmpH6020HuXi, SharedKmpH6020HuoYanCompanion, SharedKmpH6020HuoYan, SharedKmpH6020JianBianCompanion, SharedKmpH6020JianBian, SharedKmpH6020JiaoTi4ShangXiaCompanion, SharedKmpH6020JiaoTi4ShangXia, SharedKmpH6020JiaoTi4XingZhuangCompanion, SharedKmpH6020JiaoTi4XingZhuang, SharedKmpH6020LayerPaintingData, SharedKmpH6020LayersInfoCompanion, SharedKmpH6020LianYiCompanion, SharedKmpH6020LianYi, SharedKmpH6020MengHuanCompanion, SharedKmpH6020MengHuan, SharedKmpH6020ProtocolCompanion, SharedKmpH6020ShenSuo4ShangXia, SharedKmpH6020ShenSuo4XingZhuang, SharedKmpH6020TanChiShe, SharedKmpH6020TanTiaoQiu, SharedKmpH6020TiaoWen, SharedKmpH6020XiaoXiaoLe, SharedKmpH6020YanHua, SharedKmpH6020YueDong, SharedKmpH6020YunRan, SharedKmpH6020Protocol, SharedKmpH6020ShenSuo4ShangXiaCompanion, SharedKmpH6020ShenSuo4XingZhuangCompanion, SharedKmpH6020TanChiSheCompanion, SharedKmpH6020TanTiaoQiuCompanion, SharedKmpH6020TiaoWenCompanion, SharedKmpH6020XiaoXiaoLeCompanion, SharedKmpH6020YanHuaCompanion, SharedKmpH6020YueDongCompanion, SharedKmpH6020YunRanCompanion, SharedKmpH6630GraffitiProtocolCompanion, SharedKmpH6630GraffitiProtocol, SharedKmpH6630ProtocolCompanion, SharedKmpH663XXuanZhuan4BoBanTang, SharedKmpH663XBoDong4BoFeng, SharedKmpH663XYunRan4CaiQiang, SharedKmpH663XXuanZhuan4DaFengChe, SharedKmpH663XLiuDong4DieJia, SharedKmpH663XYunRan4FuGai, SharedKmpH663XXianXing4PenShe, SharedKmpH663XLiuDong4ShenSuo, SharedKmpH663XBoDong4ShuangLuoXuan, SharedKmpH663XSuiJi4TanChiShe, SharedKmpH663XSuiJi4TanTiaoQiu, SharedKmpH663XXianXing4TianChong, SharedKmpH663XXianXing4XiangSu, SharedKmpH663XSuiJi4XiaoXiaoLe, SharedKmpH663XSuiJi4YanHua, SharedKmpH6630Protocol, SharedKmpH663XAbsSub, SharedKmpH663XBoDong4BoFengCompanion, SharedKmpH663XBoDong4ShuangLuoXuanCompanion, SharedKmpH663XDirectionConfigCompanion, SharedKmpH663XJuLongKuoSanConfigCompanion, SharedKmpH663XLiuDong4DieJiaCompanion, SharedKmpH663XLiuDong4ShenSuoCompanion, SharedKmpH663XProtocolHelper, SharedKmpH663XSuiJi4TanChiSheCompanion, SharedKmpH663XSuiJi4TanTiaoQiuCompanion, SharedKmpH663XSuiJi4XiaoXiaoLeCompanion, SharedKmpH663XSuiJi4YanHuaCompanion, SharedKmpH663XXianXing4PenSheCompanion, SharedKmpH663XXianXing4TianChongCompanion, SharedKmpH663XXianXing4XiangSuCompanion, SharedKmpH663XXuanZhuan4BoBanTangCompanion, SharedKmpH663XXuanZhuan4DaFengCheCompanion, SharedKmpH663XYunRan4CaiQiangCompanion, SharedKmpH663XYunRan4FuGaiCompanion, SharedKmpH70CXBrightnessConfigCompanion, SharedKmpH70CXDirectionConfigCompanion, SharedKmpH70CXJiDianConfigCompanion, SharedKmpH70CXProtocolCompanion, SharedKmpH70CXProtocol, SharedKmpH70CXSubEffectConfigCompanion, SharedKmpH70CXAbsSub, SharedKmpH70CXSub4CaiHongCompanion, SharedKmpH70CXSub4CaiHong, SharedKmpH70CXSub4FenCengCompanion, SharedKmpH70CXSub4FenCeng, SharedKmpH70CXSub4HuoYanCompanion, SharedKmpH70CXSub4HuoYan, SharedKmpH70CXSub4KuoSanCompanion, SharedKmpH70CXSub4KuoSan, SharedKmpH70CXSub4LiuDongCompanion, SharedKmpH70CXSub4LiuDong, SharedKmpH70CXSub4LuoXuanCompanion, SharedKmpH70CXSub4LuoXuan, SharedKmpH70CXSub4TongXinYuanCompanion, SharedKmpH70CXSub4TongXinYuan, SharedKmpH70CXSub4XingGuangCompanion, SharedKmpH70CXSub4XingGuang, SharedKmpH70CXSub4XuanWoCompanion, SharedKmpH70CXSub4XuanWo, SharedKmpH70CXSub4XuanZhuanCompanion, SharedKmpH70CXSub4XuanZhuan, SharedKmpH70CXSub4ZhuiZhuCompanion, SharedKmpH70CXSub4ZhuiZhu, SharedLayerCompanion, SharedLayer, SharedSub4MultiLayerCompanion, SharedSub4MultiLayer, SharedKmpAreaMoveEffectCompanion, SharedKmpAreaMoveEffect, SharedKmpBrightnessEffectCompanion, SharedKmpBrightnessEffect, SharedKmpColorEffectCompanion, SharedKmpColorEffect, SharedKmpInAreaMoveEffectCompanion, SharedKmpInAreaMoveEffect, SharedKmpRgbICEffectCompanion, SharedKmpRgbICEffect, SharedKmpRgbICProtocolCompanion, SharedKmpRgbICProtocol, SharedKmpArrayUtils, SharedKotlinBooleanArray, SharedKotlinCharArray, SharedKotlinDoubleArray, SharedKotlinFloatArray, SharedKotlinLongArray, SharedKotlinShortArray, SharedKmpBleUtils, SharedKmpByteUtils, SharedKmpColorUtils, SharedKotlinPair<__covariant A, __covariant B>, SharedKmpConstants, SharedKmpImageConverterManager, SharedKmpLog, SharedKmpLogManager, SharedKotlinx_serialization_jsonJsonElement, SharedKotlinx_serialization_jsonJson, SharedKotlinByteIterator, SharedKotlinIntIterator, SharedKotlinThrowable, SharedKotlinBooleanIterator, SharedKotlinCharIterator, SharedKotlinDoubleIterator, SharedKotlinFloatIterator, SharedKotlinLongIterator, SharedKotlinShortIterator, SharedKotlinx_serialization_jsonJsonElementCompanion, SharedKotlinx_serialization_coreSerializersModule, SharedKotlinx_serialization_jsonJsonDefault, SharedKotlinx_serialization_jsonJsonConfiguration, SharedKotlinx_serialization_coreSerialKind, SharedKotlinNothing, SharedKotlinx_serialization_jsonClassDiscriminatorMode;
+@class SharedKmpProtocolHelper, SharedKmpSceneConfigInfo, SharedKmpDeviceInfo, SharedKotlinByteArray, SharedKmpGoodsType, SharedKmpInfoChecker, SharedKmpSku, SharedKmpBrightModeCompanion, SharedKotlinIntArray, SharedKmpColorListInfo, SharedKmpDeviceInfoCompanion, SharedKmpH6020DirectionCompanion, SharedKmpH6020Speed, SharedKmpH6020Direction, SharedKmpH6020DirectionSpeedInfoCompanion, SharedKmpH6020DirectionSpeedInfo, SharedKmpH6020GraffitiSceneSpeedBeanExt, SharedKmpH6020GraffitiSceneSpeedBeanCompanion, SharedKmpH6020GraffitiSceneSpeedBeanExtCompanion, SharedKmpH6020SpeedCompanion, SharedKmpH61DXConfigInfoCompanion, SharedKotlinArray<T>, SharedKmpH70CXSpeedModeCompanion, SharedKmpSceneSpeedInfo, SharedKmpSceneDirectionInfo, SharedKmpSceneSpeedInfoCompanion, SharedKmpSpeedInfoCompanion, SharedKmpSpeedInfo, SharedKmpSpeedModeCompanion, SharedKmpBrightMode, SharedKmpToneColorInfo, SharedKmpToneColorListInfo, SharedAbsKmpProtocol, SharedKmpCommonProtocol0x00Companion, SharedKmpCommonProtocol0x00, SharedKmpRgbICGraffitiShareProtocol0x08Companion, SharedKmpRgbICGraffitiShareProtocol0x08, SharedKotlinTriple<__covariant A, __covariant B, __covariant C>, SharedKmpCellGraffitiDataNewProtocolCompanion, SharedKmpLayersInfo, SharedKmpCellGraffitiDataNewProtocol, SharedKmpDiyGraffitiV2, SharedKmpGraffitiDefaultData, SharedKmpGraffitiSendDataCompanion, SharedKmpLayerBase, SharedKmpLayerPaintingData, SharedMoveLayer, SharedTextGravity, SharedTextSize, SharedLayerTextData, SharedKotlinEnumCompanion, SharedKotlinEnum<E>, SharedKmpH6020AbsSub, SharedKmpH6020CaiHongCompanion, SharedKmpH6020CaiHong, SharedKmpH6020CaiQiangCompanion, SharedKmpH6020CaiQiang, SharedKmpH6020CellGraffitiDataNewProtocolCompanion, SharedKmpH6020CellGraffitiDataNewProtocol, SharedKmpH6020DangYangCompanion, SharedKmpH6020DangYang, SharedKmpH6020DuiJi4ShangXiaCompanion, SharedKmpH6020DuiJi4ShangXia, SharedKmpH6020DuiJi4XingZhuangCompanion, SharedKmpH6020DuiJi4XingZhuang, SharedKmpH6020HuXiCompanion, SharedKmpH6020HuXi, SharedKmpH6020HuoYanCompanion, SharedKmpH6020HuoYan, SharedKmpH6020JianBianCompanion, SharedKmpH6020JianBian, SharedKmpH6020JiaoTi4ShangXiaCompanion, SharedKmpH6020JiaoTi4ShangXia, SharedKmpH6020JiaoTi4XingZhuangCompanion, SharedKmpH6020JiaoTi4XingZhuang, SharedKmpH6020LayerPaintingData, SharedKmpH6020LayersInfoCompanion, SharedKmpH6020LianYiCompanion, SharedKmpH6020LianYi, SharedKmpH6020MengHuanCompanion, SharedKmpH6020MengHuan, SharedKmpH6020ProtocolCompanion, SharedKmpH6020ShenSuo4ShangXia, SharedKmpH6020ShenSuo4XingZhuang, SharedKmpH6020TanChiShe, SharedKmpH6020TanTiaoQiu, SharedKmpH6020TiaoWen, SharedKmpH6020XiaoXiaoLe, SharedKmpH6020YanHua, SharedKmpH6020YueDong, SharedKmpH6020YunRan, SharedKmpH6020Protocol, SharedKmpH6020ShenSuo4ShangXiaCompanion, SharedKmpH6020ShenSuo4XingZhuangCompanion, SharedKmpH6020TanChiSheCompanion, SharedKmpH6020TanTiaoQiuCompanion, SharedKmpH6020TiaoWenCompanion, SharedKmpH6020XiaoXiaoLeCompanion, SharedKmpH6020YanHuaCompanion, SharedKmpH6020YueDongCompanion, SharedKmpH6020YunRanCompanion, SharedKmpH6063PageEffectCompanion, SharedLayerPointMsg, SharedKmpH61DXAbsSub, SharedKmpH6063SubEffectFlickering, SharedKmpH6063SubEffectFlow, SharedKmpH6063SubEffectStretch, SharedKmpH6063PageEffect, SharedKmpH6063ProtocolCompanion, SharedKotlinPair<__covariant A, __covariant B>, SharedKmpH6063Protocol, SharedKmpH6063SubEffectFlickeringCompanion, SharedKmpH6063SubEffectFlowCompanion, SharedKmpH6063SubEffectStretchCompanion, SharedKmpH61DXPageEffectCompanion, SharedKmpH61DXSubEffect4DuiJi, SharedKmpH61DXSubEffect4JiHe, SharedKmpH61DXSubEffect4LiuDong, SharedKmpH61DXSubEffect4SuiJi, SharedKmpH61DXSubEffect4XianXing, SharedKmpH61DXPageEffect, SharedKmpH61DXProtocolCompanion, SharedKmpH61DXProtocol, SharedKmpH61DXSubEffect4DuiJiCompanion, SharedKmpH61DXSubEffect4JiHeCompanion, SharedKmpH61DXSubEffect4LiuDongCompanion, SharedKmpH61DXSubEffect4SuiJiCompanion, SharedKmpH61DXSubEffect4XianXingCompanion, SharedKmpH6630GraffitiProtocolCompanion, SharedKmpH6630GraffitiProtocol, SharedKmpH6630ProtocolCompanion, SharedKmpH663XXuanZhuan4BoBanTang, SharedKmpH663XBoDong4BoFeng, SharedKmpH663XYunRan4CaiQiang, SharedKmpH663XXuanZhuan4DaFengChe, SharedKmpH663XLiuDong4DieJia, SharedKmpH663XYunRan4FuGai, SharedKmpH663XXianXing4PenShe, SharedKmpH663XLiuDong4ShenSuo, SharedKmpH663XBoDong4ShuangLuoXuan, SharedKmpH663XSuiJi4TanChiShe, SharedKmpH663XSuiJi4TanTiaoQiu, SharedKmpH663XXianXing4TianChong, SharedKmpH663XXianXing4XiangSu, SharedKmpH663XSuiJi4XiaoXiaoLe, SharedKmpH663XSuiJi4YanHua, SharedKmpH6630Protocol, SharedKmpH663XAbsSub, SharedKmpH663XBoDong4BoFengCompanion, SharedKmpH663XBoDong4ShuangLuoXuanCompanion, SharedKmpH663XDirectionConfigCompanion, SharedKmpH663XJuLongKuoSanConfigCompanion, SharedKmpH663XLiuDong4DieJiaCompanion, SharedKmpH663XLiuDong4ShenSuoCompanion, SharedKmpH663XProtocolHelper, SharedKmpH663XSuiJi4TanChiSheCompanion, SharedKmpH663XSuiJi4TanTiaoQiuCompanion, SharedKmpH663XSuiJi4XiaoXiaoLeCompanion, SharedKmpH663XSuiJi4YanHuaCompanion, SharedKmpH663XXianXing4PenSheCompanion, SharedKmpH663XXianXing4TianChongCompanion, SharedKmpH663XXianXing4XiangSuCompanion, SharedKmpH663XXuanZhuan4BoBanTangCompanion, SharedKmpH663XXuanZhuan4DaFengCheCompanion, SharedKmpH663XYunRan4CaiQiangCompanion, SharedKmpH663XYunRan4FuGaiCompanion, SharedKmpH70CXBrightnessConfigCompanion, SharedKmpH70CXDirectionConfigCompanion, SharedKmpH70CXJiDianConfigCompanion, SharedKmpH70CXProtocolCompanion, SharedKmpH70CXProtocol, SharedKmpH70CXSubEffectConfigCompanion, SharedKmpH70CXAbsSub, SharedKmpH70CXSub4CaiHongCompanion, SharedKmpH70CXSub4CaiHong, SharedKmpH70CXSub4FenCengCompanion, SharedKmpH70CXSub4FenCeng, SharedKmpH70CXSub4HuoYanCompanion, SharedKmpH70CXSub4HuoYan, SharedKmpH70CXSub4KuoSanCompanion, SharedKmpH70CXSub4KuoSan, SharedKmpH70CXSub4LiuDongCompanion, SharedKmpH70CXSub4LiuDong, SharedKmpH70CXSub4LuoXuanCompanion, SharedKmpH70CXSub4LuoXuan, SharedKmpH70CXSub4TongXinYuanCompanion, SharedKmpH70CXSub4TongXinYuan, SharedKmpH70CXSub4XingGuangCompanion, SharedKmpH70CXSub4XingGuang, SharedKmpH70CXSub4XuanWoCompanion, SharedKmpH70CXSub4XuanWo, SharedKmpH70CXSub4XuanZhuanCompanion, SharedKmpH70CXSub4XuanZhuan, SharedKmpH70CXSub4ZhuiZhuCompanion, SharedKmpH70CXSub4ZhuiZhu, SharedLayerCompanion, SharedLayer, SharedSub4MultiLayerCompanion, SharedSub4MultiLayer, SharedKmpAreaMoveEffectCompanion, SharedKmpAreaMoveEffect, SharedKmpBrightnessEffectCompanion, SharedKmpBrightnessEffect, SharedKmpColorEffectCompanion, SharedKmpColorEffect, SharedKmpInAreaMoveEffectCompanion, SharedKmpInAreaMoveEffect, SharedKmpRgbICEffectCompanion, SharedKmpRgbICEffect, SharedKmpRgbICProtocolCompanion, SharedKmpRgbICProtocol, SharedKmpArrayUtils, SharedKotlinBooleanArray, SharedKotlinCharArray, SharedKotlinDoubleArray, SharedKotlinFloatArray, SharedKotlinLongArray, SharedKotlinShortArray, SharedKmpBleUtils, SharedKmpByteUtils, SharedKmpColorUtils, SharedKmpConstants, SharedKmpImageConverterManager, SharedKmpLog, SharedKmpLogManager, SharedKotlinx_serialization_jsonJsonElement, SharedKotlinx_serialization_jsonJson, SharedKotlinByteIterator, SharedKotlinIntIterator, SharedKotlinThrowable, SharedKotlinBooleanIterator, SharedKotlinCharIterator, SharedKotlinDoubleIterator, SharedKotlinFloatIterator, SharedKotlinLongIterator, SharedKotlinShortIterator, SharedKotlinx_serialization_jsonJsonElementCompanion, SharedKotlinx_serialization_coreSerializersModule, SharedKotlinx_serialization_jsonJsonDefault, SharedKotlinx_serialization_jsonJsonConfiguration, SharedKotlinx_serialization_coreSerialKind, SharedKotlinNothing, SharedKotlinx_serialization_jsonClassDiscriminatorMode;
 
 @protocol SharedIKmpProtocol, SharedKotlinx_serialization_coreKSerializer, SharedKotlinComparable, SharedKmpImageProcessor, SharedKmpLogProcessor, SharedKotlinx_serialization_coreEncoder, SharedKotlinx_serialization_coreSerialDescriptor, SharedKotlinx_serialization_coreSerializationStrategy, SharedKotlinx_serialization_coreDecoder, SharedKotlinx_serialization_coreDeserializationStrategy, SharedKotlinIterator, SharedKotlinx_serialization_coreSerialFormat, SharedKotlinx_serialization_coreStringFormat, SharedKotlinx_serialization_coreCompositeEncoder, SharedKotlinAnnotation, SharedKotlinx_serialization_coreCompositeDecoder, SharedKotlinx_serialization_coreSerializersModuleCollector, SharedKotlinKClass, SharedKotlinx_serialization_jsonJsonNamingStrategy, SharedKotlinKDeclarationContainer, SharedKotlinKAnnotatedElement, SharedKotlinKClassifier;
 
@@ -151,6 +151,7 @@ __attribute__((swift_name("KmpProtocolHelper")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)kmpProtocolHelper __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedKmpProtocolHelper *shared __attribute__((swift_name("shared")));
+- (NSString * _Nullable)changeSceneSpeedIndexSpeedInfoStr:(NSString * _Nullable)speedInfoStr speedIndex:(int32_t)speedIndex __attribute__((swift_name("changeSceneSpeedIndex(speedInfoStr:speedIndex:)")));
 - (SharedKmpSceneConfigInfo * _Nullable)getSceneConfigInfoConfig:(NSString * _Nullable)config info:(SharedKmpDeviceInfo *)info __attribute__((swift_name("getSceneConfigInfo(config:info:)")));
 - (id<SharedIKmpProtocol> _Nullable)parseSceneType:(int32_t)sceneType effectBytes:(SharedKotlinByteArray *)effectBytes info:(SharedKmpDeviceInfo *)info __attribute__((swift_name("parse(sceneType:effectBytes:info:)")));
 @end
@@ -479,6 +480,8 @@ __attribute__((swift_name("KmpInfoChecker")))
 + (instancetype)kmpInfoChecker __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedKmpInfoChecker *shared __attribute__((swift_name("shared")));
 - (BOOL)isH6020Info:(SharedKmpDeviceInfo *)info __attribute__((swift_name("isH6020(info:)")));
+- (BOOL)isH6063Info:(SharedKmpDeviceInfo *)info __attribute__((swift_name("isH6063(info:)")));
+- (BOOL)isH61DXInfo:(SharedKmpDeviceInfo *)info __attribute__((swift_name("isH61DX(info:)")));
 - (BOOL)isH663XInfo:(SharedKmpDeviceInfo *)info __attribute__((swift_name("isH663X(info:)")));
 - (BOOL)isH70CXInfo:(SharedKmpDeviceInfo *)info __attribute__((swift_name("isH70CX(info:)")));
 @end
@@ -707,6 +710,33 @@ __attribute__((swift_name("KmpH6020Speed.Companion")))
  *   kotlinx.serialization.Serializable
 */
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH61DXConfigInfo")))
+@interface SharedKmpH61DXConfigInfo : SharedBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@property (class, readonly, getter=companion) SharedKmpH61DXConfigInfoCompanion *companion __attribute__((swift_name("companion")));
+@property int32_t defDirIndex __attribute__((swift_name("defDirIndex")));
+@property int32_t defSpeedIndex __attribute__((swift_name("defSpeedIndex")));
+@property SharedKotlinIntArray * _Nullable supportDirections __attribute__((swift_name("supportDirections")));
+@property SharedKotlinArray<SharedKotlinIntArray *> * _Nullable supportSpeedConfigs __attribute__((swift_name("supportSpeedConfigs")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH61DXConfigInfo.Companion")))
+@interface SharedKmpH61DXConfigInfoCompanion : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedKmpH61DXConfigInfoCompanion *shared __attribute__((swift_name("shared")));
+- (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("KmpH70CXSpeedMode")))
 @interface SharedKmpH70CXSpeedMode : SharedBase
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
@@ -738,8 +768,8 @@ __attribute__((swift_name("KmpSceneConfigInfo")))
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) SharedKmpSceneDirectionInfo * _Nullable directionInfo __attribute__((swift_name("directionInfo")));
-@property (readonly) SharedKmpSceneSpeedInfo * _Nullable speedInfo __attribute__((swift_name("speedInfo")));
+@property SharedKmpSceneDirectionInfo * _Nullable directionInfo __attribute__((swift_name("directionInfo")));
+@property SharedKmpSceneSpeedInfo * _Nullable speedInfo __attribute__((swift_name("speedInfo")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -778,6 +808,36 @@ __attribute__((swift_name("KmpSceneSpeedInfo.Companion")))
 @property (class, readonly, getter=shared) SharedKmpSceneSpeedInfoCompanion *shared __attribute__((swift_name("shared")));
 @property (readonly) int32_t SPEED_TYPE_GEARS __attribute__((swift_name("SPEED_TYPE_GEARS")));
 @property (readonly) int32_t SPEED_TYPE_STEPLESS __attribute__((swift_name("SPEED_TYPE_STEPLESS")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpSpeedInfo")))
+@interface SharedKmpSpeedInfo : SharedBase
+- (instancetype)initWithConfig:(NSString *)config supSpeed:(BOOL)supSpeed speedIndex:(int32_t)speedIndex scenceParamId:(int32_t)scenceParamId __attribute__((swift_name("init(config:supSpeed:speedIndex:scenceParamId:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) SharedKmpSpeedInfoCompanion *companion __attribute__((swift_name("companion")));
+- (SharedKmpSpeedInfo *)doCopyConfig:(NSString *)config supSpeed:(BOOL)supSpeed speedIndex:(int32_t)speedIndex scenceParamId:(int32_t)scenceParamId __attribute__((swift_name("doCopy(config:supSpeed:speedIndex:scenceParamId:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property NSString *config __attribute__((swift_name("config")));
+@property int32_t scenceParamId __attribute__((swift_name("scenceParamId")));
+@property int32_t speedIndex __attribute__((swift_name("speedIndex")));
+@property BOOL supSpeed __attribute__((swift_name("supSpeed")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpSpeedInfo.Companion")))
+@interface SharedKmpSpeedInfoCompanion : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedKmpSpeedInfoCompanion *shared __attribute__((swift_name("shared")));
+- (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
 
@@ -1903,6 +1963,482 @@ __attribute__((swift_name("KmpH6020YunRan.Companion")))
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (SharedKmpH6020YunRan * _Nullable)parseDetails:(SharedKotlinByteArray *)details error:(NSError * _Nullable * _Nullable)error __attribute__((swift_name("parse(details:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH6063PageEffect")))
+@interface SharedKmpH6063PageEffect : SharedBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@property (class, readonly, getter=companion) SharedKmpH6063PageEffectCompanion *companion __attribute__((swift_name("companion")));
+- (BOOL)changeActionEffectModeAction:(int32_t)action __attribute__((swift_name("changeActionEffectMode(action:)")));
+- (NSMutableArray<SharedInt *> *)getColors __attribute__((swift_name("getColors()")));
+- (NSMutableArray<SharedByte *> *)toBytesPos:(int32_t)pos msg:(void (^ _Nullable)(NSString *))msg __attribute__((swift_name("toBytes(pos:msg:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+- (void)updateColorOffsetHOffsetH:(float)offsetH __attribute__((swift_name("updateColorOffsetH(offsetH:)")));
+@property int32_t actionEffect __attribute__((swift_name("actionEffect")));
+@property int32_t area __attribute__((swift_name("area")));
+@property int32_t direction __attribute__((swift_name("direction")));
+@property BOOL isAdd __attribute__((swift_name("isAdd")));
+@property SharedLayerPointMsg *layerPointMsg __attribute__((swift_name("layerPointMsg")));
+@property int32_t layerPriority __attribute__((swift_name("layerPriority")));
+@property int8_t layerSpeed __attribute__((swift_name("layerSpeed")));
+@property SharedKmpH61DXAbsSub * _Nullable subEffect __attribute__((swift_name("subEffect")));
+@property SharedKmpH6063SubEffectFlickering * _Nullable subEffect4Flickering __attribute__((swift_name("subEffect4Flickering")));
+@property SharedKmpH6063SubEffectFlow * _Nullable subEffect4LiuDong __attribute__((swift_name("subEffect4LiuDong")));
+@property SharedKmpH6063SubEffectStretch * _Nullable subEffect4Stretch __attribute__((swift_name("subEffect4Stretch")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH6063PageEffect.Companion")))
+@interface SharedKmpH6063PageEffectCompanion : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedKmpH6063PageEffectCompanion *shared __attribute__((swift_name("shared")));
+- (SharedKmpH6063PageEffect *)doCopyPageEffect:(SharedKmpH6063PageEffect *)pageEffect __attribute__((swift_name("doCopy(pageEffect:)")));
+- (SharedKmpH6063PageEffect * _Nullable)parseEffectValue:(SharedKotlinByteArray *)effectValue __attribute__((swift_name("parse(effectValue:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH6063Protocol")))
+@interface SharedKmpH6063Protocol : SharedAbsKmpProtocol
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@property (class, readonly, getter=companion) SharedKmpH6063ProtocolCompanion *companion __attribute__((swift_name("companion")));
+- (NSMutableArray<SharedByte *> *)bytes __attribute__((swift_name("bytes()")));
+- (SharedKmpToneColorListInfo *)getToneColors __attribute__((swift_name("getToneColors()")));
+- (void)resetColor __attribute__((swift_name("resetColor()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+- (void)updateColorH:(float)h __attribute__((swift_name("updateColor(h:)")));
+- (void)updateDirectionDirectionOrIndex:(SharedInt * _Nullable)directionOrIndex config:(NSString * _Nullable)config __attribute__((swift_name("updateDirection(directionOrIndex:config:)")));
+- (void)updateSpeedSpeed:(int32_t)speed __attribute__((swift_name("updateSpeed(speed:)")));
+- (void)updateSpeedSpeedOrIndex:(SharedInt * _Nullable)speedOrIndex config:(NSString * _Nullable)config __attribute__((swift_name("updateSpeed(speedOrIndex:config:)")));
+@property SharedKotlinPair<SharedInt *, SharedKmpH6063PageEffect *> * _Nullable curPage __attribute__((swift_name("curPage")));
+@property (readonly) NSMutableArray<SharedKmpH6063PageEffect *> *pageEffects __attribute__((swift_name("pageEffects")));
+@property int8_t speedGradient __attribute__((swift_name("speedGradient")));
+@property BOOL switchGradient __attribute__((swift_name("switchGradient")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH6063Protocol.Companion")))
+@interface SharedKmpH6063ProtocolCompanion : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedKmpH6063ProtocolCompanion *shared __attribute__((swift_name("shared")));
+- (SharedKmpH6063Protocol * _Nullable)parseBytesProtocolsBytes:(SharedKotlinByteArray *)protocolsBytes __attribute__((swift_name("parseBytes(protocolsBytes:)")));
+@end
+
+__attribute__((swift_name("KmpH61DXAbsSub")))
+@interface SharedKmpH61DXAbsSub : SharedBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (void)changeDirectionDirection:(int8_t)direction __attribute__((swift_name("changeDirection(direction:)")));
+- (NSMutableArray<SharedInt *> *)getCurColors __attribute__((swift_name("getCurColors()")));
+- (NSMutableArray<SharedByte *> * _Nullable)toBytesPos:(int32_t)pos msg:(void (^ _Nullable)(NSString *))msg __attribute__((swift_name("toBytes(pos:msg:)")));
+- (void)updateColorOffsetHOffsetH:(float)offsetH __attribute__((swift_name("updateColorOffsetH(offsetH:)")));
+
+/**
+ * @note This property has protected visibility in Kotlin source and is intended only for use by subclasses.
+*/
+@property float offsetH __attribute__((swift_name("offsetH")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH6063SubEffectFlickering")))
+@interface SharedKmpH6063SubEffectFlickering : SharedKmpH61DXAbsSub
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@property (class, readonly, getter=companion) SharedKmpH6063SubEffectFlickeringCompanion *companion __attribute__((swift_name("companion")));
+- (NSMutableArray<SharedInt *> *)getCurColors __attribute__((swift_name("getCurColors()")));
+- (NSMutableArray<SharedByte *> * _Nullable)toBytesPos:(int32_t)pos msg:(void (^ _Nullable)(NSString *))msg __attribute__((swift_name("toBytes(pos:msg:)")));
+@property int32_t bgColorBrightnesses __attribute__((swift_name("bgColorBrightnesses")));
+@property int32_t bgColorGradientLen __attribute__((swift_name("bgColorGradientLen")));
+@property NSMutableArray<SharedInt *> *bgColors __attribute__((swift_name("bgColors")));
+@property int8_t brightnessType __attribute__((swift_name("brightnessType")));
+@property SharedKotlinIntArray *brightnesses __attribute__((swift_name("brightnesses")));
+@property NSMutableArray<SharedInt *> *colors __attribute__((swift_name("colors")));
+@property SharedKotlinByteArray *flickerType __attribute__((swift_name("flickerType")));
+@property SharedKotlinIntArray *flickeringBlockRange __attribute__((swift_name("flickeringBlockRange")));
+@property int32_t flickeringNum __attribute__((swift_name("flickeringNum")));
+@property BOOL locationRandom __attribute__((swift_name("locationRandom")));
+@property int32_t quSeRandom __attribute__((swift_name("quSeRandom")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH6063SubEffectFlickering.Companion")))
+@interface SharedKmpH6063SubEffectFlickeringCompanion : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedKmpH6063SubEffectFlickeringCompanion *shared __attribute__((swift_name("shared")));
+- (SharedKmpH6063SubEffectFlickering * _Nullable)parseActionBytes:(SharedKotlinByteArray *)actionBytes __attribute__((swift_name("parse(actionBytes:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH6063SubEffectFlow")))
+@interface SharedKmpH6063SubEffectFlow : SharedKmpH61DXAbsSub
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@property (class, readonly, getter=companion) SharedKmpH6063SubEffectFlowCompanion *companion __attribute__((swift_name("companion")));
+- (NSMutableArray<SharedInt *> *)getCurColors __attribute__((swift_name("getCurColors()")));
+- (int32_t)quSeBuChang __attribute__((swift_name("quSeBuChang()")));
+- (NSMutableArray<SharedByte *> * _Nullable)toBytesPos:(int32_t)pos msg:(void (^ _Nullable)(NSString *))msg __attribute__((swift_name("toBytes(pos:msg:)")));
+@property SharedKotlinByteArray *brightnesses __attribute__((swift_name("brightnesses")));
+@property NSMutableArray<SharedInt *> *colors __attribute__((swift_name("colors")));
+@property int32_t insertBlackNum __attribute__((swift_name("insertBlackNum")));
+@property SharedKotlinByteArray *liuDongDirection __attribute__((swift_name("liuDongDirection")));
+@property int8_t liuDongStyle __attribute__((swift_name("liuDongStyle")));
+@property BOOL puMan __attribute__((swift_name("puMan")));
+@property SharedKotlinByteArray *quSeStyle __attribute__((swift_name("quSeStyle")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH6063SubEffectFlow.Companion")))
+@interface SharedKmpH6063SubEffectFlowCompanion : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedKmpH6063SubEffectFlowCompanion *shared __attribute__((swift_name("shared")));
+- (SharedKmpH6063SubEffectFlow * _Nullable)parseActionBytes:(SharedKotlinByteArray *)actionBytes __attribute__((swift_name("parse(actionBytes:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH6063SubEffectStretch")))
+@interface SharedKmpH6063SubEffectStretch : SharedKmpH61DXAbsSub
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@property (class, readonly, getter=companion) SharedKmpH6063SubEffectStretchCompanion *companion __attribute__((swift_name("companion")));
+- (NSMutableArray<SharedInt *> *)getCurColors __attribute__((swift_name("getCurColors()")));
+- (NSMutableArray<SharedByte *> * _Nullable)toBytesPos:(int32_t)pos msg:(void (^ _Nullable)(NSString *))msg __attribute__((swift_name("toBytes(pos:msg:)")));
+@property int32_t basicPointNum __attribute__((swift_name("basicPointNum")));
+@property BOOL basicPointSwitch __attribute__((swift_name("basicPointSwitch")));
+@property SharedKotlinByteArray *brightnesses __attribute__((swift_name("brightnesses")));
+@property NSMutableArray<SharedInt *> *colors __attribute__((swift_name("colors")));
+@property int32_t effectDirection __attribute__((swift_name("effectDirection")));
+@property SharedKotlinByteArray *quSeStyle __attribute__((swift_name("quSeStyle")));
+@property BOOL randomSwitch __attribute__((swift_name("randomSwitch")));
+@property int32_t startOffset __attribute__((swift_name("startOffset")));
+@property BOOL stretchType __attribute__((swift_name("stretchType")));
+@property int32_t stretchTypeOffset __attribute__((swift_name("stretchTypeOffset")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH6063SubEffectStretch.Companion")))
+@interface SharedKmpH6063SubEffectStretchCompanion : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedKmpH6063SubEffectStretchCompanion *shared __attribute__((swift_name("shared")));
+- (SharedKmpH6063SubEffectStretch * _Nullable)parseActionBytes:(SharedKotlinByteArray *)actionBytes __attribute__((swift_name("parse(actionBytes:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("LayerPointMsg")))
+@interface SharedLayerPointMsg : SharedBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (void)parseDirection:(int32_t)direction bytes:(SharedKotlinByteArray *)bytes __attribute__((swift_name("parse(direction:bytes:)")));
+- (SharedKotlinByteArray *)toBytesDirection:(int32_t)direction __attribute__((swift_name("toBytes(direction:)")));
+@property int32_t lineCenter __attribute__((swift_name("lineCenter")));
+@property int32_t lineStrip __attribute__((swift_name("lineStrip")));
+@property int32_t overallCenter __attribute__((swift_name("overallCenter")));
+@property int32_t x __attribute__((swift_name("x")));
+@property int32_t y __attribute__((swift_name("y")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH61DXPageEffect")))
+@interface SharedKmpH61DXPageEffect : SharedBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@property (class, readonly, getter=companion) SharedKmpH61DXPageEffectCompanion *companion __attribute__((swift_name("companion")));
+- (BOOL)changeActionEffectMode __attribute__((swift_name("changeActionEffectMode()")));
+- (void)changeDirectionDirection:(int8_t)direction __attribute__((swift_name("changeDirection(direction:)")));
+- (NSMutableArray<SharedInt *> *)getColors __attribute__((swift_name("getColors()")));
+- (NSMutableArray<SharedByte *> * _Nullable)toBytesPos:(int32_t)pos msg:(void (^ _Nullable)(NSString *))msg __attribute__((swift_name("toBytes(pos:msg:)")));
+- (void)updateColorOffsetHOffsetH:(float)offsetH __attribute__((swift_name("updateColorOffsetH(offsetH:)")));
+@property int8_t actionEffect __attribute__((swift_name("actionEffect")));
+@property SharedKmpH61DXAbsSub * _Nullable iProMsg __attribute__((swift_name("iProMsg")));
+@property BOOL isAdd __attribute__((swift_name("isAdd")));
+@property int8_t speed __attribute__((swift_name("speed")));
+@property SharedKmpH61DXSubEffect4DuiJi * _Nullable subEffect4DuiJi __attribute__((swift_name("subEffect4DuiJi")));
+@property SharedKmpH61DXSubEffect4JiHe * _Nullable subEffect4JiHe __attribute__((swift_name("subEffect4JiHe")));
+@property SharedKmpH61DXSubEffect4LiuDong * _Nullable subEffect4LiuDong __attribute__((swift_name("subEffect4LiuDong")));
+@property SharedKmpH61DXSubEffect4SuiJi * _Nullable subEffect4SuiJi __attribute__((swift_name("subEffect4SuiJi")));
+@property SharedKmpH61DXSubEffect4XianXing * _Nullable subEffect4XianXing __attribute__((swift_name("subEffect4XianXing")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH61DXPageEffect.Companion")))
+@interface SharedKmpH61DXPageEffectCompanion : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedKmpH61DXPageEffectCompanion *shared __attribute__((swift_name("shared")));
+- (SharedKmpH61DXPageEffect * _Nullable)parseEffectValue:(SharedKotlinByteArray *)effectValue __attribute__((swift_name("parse(effectValue:)")));
+@property (readonly) NSString *TAG __attribute__((swift_name("TAG")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH61DXProtocol")))
+@interface SharedKmpH61DXProtocol : SharedAbsKmpProtocol
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@property (class, readonly, getter=companion) SharedKmpH61DXProtocolCompanion *companion __attribute__((swift_name("companion")));
+- (NSMutableArray<SharedByte *> *)bytes __attribute__((swift_name("bytes()")));
+- (SharedKmpToneColorListInfo *)getToneColors __attribute__((swift_name("getToneColors()")));
+- (void)resetColor __attribute__((swift_name("resetColor()")));
+- (void)updateColorH:(float)h __attribute__((swift_name("updateColor(h:)")));
+- (void)updateDirectionDirectionOrIndex:(SharedInt * _Nullable)directionOrIndex config:(NSString * _Nullable)config __attribute__((swift_name("updateDirection(directionOrIndex:config:)")));
+- (void)updateSpeedSpeedOrIndex:(SharedInt * _Nullable)speedOrIndex config:(NSString * _Nullable)config __attribute__((swift_name("updateSpeed(speedOrIndex:config:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH61DXProtocol.Companion")))
+@interface SharedKmpH61DXProtocolCompanion : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedKmpH61DXProtocolCompanion *shared __attribute__((swift_name("shared")));
+- (SharedKmpSceneConfigInfo * _Nullable)getSceneConfigInfoConfig:(NSString * _Nullable)config __attribute__((swift_name("getSceneConfigInfo(config:)")));
+- (SharedKmpH61DXProtocol * _Nullable)parseBytesEffectBytes:(SharedKotlinByteArray *)effectBytes __attribute__((swift_name("parseBytes(effectBytes:)")));
+@property (readonly) NSString *TAG __attribute__((swift_name("TAG")));
+@property (readonly) int8_t pro_direction_jvlong __attribute__((swift_name("pro_direction_jvlong")));
+@property (readonly) int8_t pro_direction_jvlong_shangxia __attribute__((swift_name("pro_direction_jvlong_shangxia")));
+@property (readonly) int8_t pro_direction_jvlong_zuoyou __attribute__((swift_name("pro_direction_jvlong_zuoyou")));
+@property (readonly) int8_t pro_direction_kuosan __attribute__((swift_name("pro_direction_kuosan")));
+@property (readonly) int8_t pro_direction_kuosan_shangxia __attribute__((swift_name("pro_direction_kuosan_shangxia")));
+@property (readonly) int8_t pro_direction_kuosan_zuoyou __attribute__((swift_name("pro_direction_kuosan_zuoyou")));
+@property (readonly) int8_t pro_direction_nishizhen __attribute__((swift_name("pro_direction_nishizhen")));
+@property (readonly) int8_t pro_direction_shang __attribute__((swift_name("pro_direction_shang")));
+@property (readonly) int8_t pro_direction_shunshizhen __attribute__((swift_name("pro_direction_shunshizhen")));
+@property (readonly) int8_t pro_direction_xia __attribute__((swift_name("pro_direction_xia")));
+@property (readonly) int8_t pro_direction_xian_nishizhen __attribute__((swift_name("pro_direction_xian_nishizhen")));
+@property (readonly) int8_t pro_direction_xian_shunshizhen __attribute__((swift_name("pro_direction_xian_shunshizhen")));
+@property (readonly) int8_t pro_direction_you __attribute__((swift_name("pro_direction_you")));
+@property (readonly) int8_t pro_direction_zuo __attribute__((swift_name("pro_direction_zuo")));
+@property (readonly) int8_t rule_4_dieJia __attribute__((swift_name("rule_4_dieJia")));
+@property (readonly) int8_t sub_effect_4_duiJi __attribute__((swift_name("sub_effect_4_duiJi")));
+@property (readonly) int8_t sub_effect_4_jihe __attribute__((swift_name("sub_effect_4_jihe")));
+@property (readonly) int8_t sub_effect_4_liuDong __attribute__((swift_name("sub_effect_4_liuDong")));
+@property (readonly) int8_t sub_effect_4_suiJi __attribute__((swift_name("sub_effect_4_suiJi")));
+@property (readonly) int8_t sub_effect_4_xianxing __attribute__((swift_name("sub_effect_4_xianxing")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH61DXSubEffect4DuiJi")))
+@interface SharedKmpH61DXSubEffect4DuiJi : SharedKmpH61DXAbsSub
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@property (class, readonly, getter=companion) SharedKmpH61DXSubEffect4DuiJiCompanion *companion __attribute__((swift_name("companion")));
+- (void)changeDirectionDirection:(int8_t)direction __attribute__((swift_name("changeDirection(direction:)")));
+- (NSMutableArray<SharedInt *> *)getCurColors __attribute__((swift_name("getCurColors()")));
+- (NSMutableArray<SharedByte *> *)toBytesPos:(int32_t)pos msg:(void (^ _Nullable)(NSString *))msg __attribute__((swift_name("toBytes(pos:msg:)")));
+- (void)updateDirectionDirection:(int8_t)direction effectType:(int8_t)effectType __attribute__((swift_name("updateDirection(direction:effectType:)")));
+@property int32_t colorPieceNum __attribute__((swift_name("colorPieceNum")));
+@property (readonly) NSMutableArray<SharedInt *> *colors __attribute__((swift_name("colors")));
+@property int8_t direction __attribute__((swift_name("direction")));
+@property int8_t effectType __attribute__((swift_name("effectType")));
+@property SharedKotlinByteArray *fgValidValue __attribute__((swift_name("fgValidValue")));
+@property int32_t pieceNum __attribute__((swift_name("pieceNum")));
+@property SharedKotlinByteArray *sfValidValue __attribute__((swift_name("sfValidValue")));
+@property int8_t subEffect __attribute__((swift_name("subEffect")));
+@property SharedKotlinByteArray *xxlValidValue __attribute__((swift_name("xxlValidValue")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH61DXSubEffect4DuiJi.Companion")))
+@interface SharedKmpH61DXSubEffect4DuiJiCompanion : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedKmpH61DXSubEffect4DuiJiCompanion *shared __attribute__((swift_name("shared")));
+- (SharedKmpH61DXSubEffect4DuiJi * _Nullable)parseEffectValue:(SharedKotlinByteArray *)effectValue __attribute__((swift_name("parse(effectValue:)")));
+@property (readonly) NSString *TAG __attribute__((swift_name("TAG")));
+@property (readonly) int8_t color_type_zhengDuan __attribute__((swift_name("color_type_zhengDuan")));
+@property (readonly) int8_t direction_start __attribute__((swift_name("direction_start")));
+@property (readonly) int8_t effect_type_xianXing __attribute__((swift_name("effect_type_xianXing")));
+@property (readonly) int8_t sub_effect_fuGai __attribute__((swift_name("sub_effect_fuGai")));
+@property (readonly) int8_t sub_effect_shiFang __attribute__((swift_name("sub_effect_shiFang")));
+@property (readonly) int8_t sub_effect_xiaoxiaole __attribute__((swift_name("sub_effect_xiaoxiaole")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH61DXSubEffect4JiHe")))
+@interface SharedKmpH61DXSubEffect4JiHe : SharedKmpH61DXAbsSub
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@property (class, readonly, getter=companion) SharedKmpH61DXSubEffect4JiHeCompanion *companion __attribute__((swift_name("companion")));
+- (void)changeDirectionDirection:(int8_t)direction __attribute__((swift_name("changeDirection(direction:)")));
+- (NSMutableArray<SharedInt *> *)getCurColors __attribute__((swift_name("getCurColors()")));
+- (NSMutableArray<SharedByte *> *)toBytesPos:(int32_t)pos msg:(void (^ _Nullable)(NSString *))msg __attribute__((swift_name("toBytes(pos:msg:)")));
+- (void)updateDirectionDirection:(int8_t)direction effectType:(int8_t)effectType __attribute__((swift_name("updateDirection(direction:effectType:)")));
+@property BOOL colorGradual __attribute__((swift_name("colorGradual")));
+@property (readonly) SharedKotlinIntArray *colorRangeArray __attribute__((swift_name("colorRangeArray")));
+@property (readonly) NSMutableArray<SharedInt *> *colors __attribute__((swift_name("colors")));
+@property int8_t direction __attribute__((swift_name("direction")));
+@property int8_t effectType __attribute__((swift_name("effectType")));
+@property BOOL entryAndExitEnable __attribute__((swift_name("entryAndExitEnable")));
+@property SharedKotlinByteArray *hgValidValue __attribute__((swift_name("hgValidValue")));
+@property int32_t pieceNum __attribute__((swift_name("pieceNum")));
+@property int8_t subEffect __attribute__((swift_name("subEffect")));
+@property (readonly) SharedKotlinIntArray *xzColorRangeArray __attribute__((swift_name("xzColorRangeArray")));
+@property SharedKotlinByteArray *xzValidValue __attribute__((swift_name("xzValidValue")));
+@property SharedKotlinByteArray *yxValidValue __attribute__((swift_name("yxValidValue")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH61DXSubEffect4JiHe.Companion")))
+@interface SharedKmpH61DXSubEffect4JiHeCompanion : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedKmpH61DXSubEffect4JiHeCompanion *shared __attribute__((swift_name("shared")));
+- (SharedKmpH61DXSubEffect4JiHe * _Nullable)parseEffectValue:(SharedKotlinByteArray *)effectValue __attribute__((swift_name("parse(effectValue:)")));
+@property (readonly) NSString *TAG __attribute__((swift_name("TAG")));
+@property (readonly) int8_t centerPointCenter __attribute__((swift_name("centerPointCenter")));
+@property (readonly) int8_t centerPointLeftTop __attribute__((swift_name("centerPointLeftTop")));
+@property (readonly) int8_t effectDirectionKuosan __attribute__((swift_name("effectDirectionKuosan")));
+@property (readonly) int8_t effectDirectionShun __attribute__((swift_name("effectDirectionShun")));
+@property (readonly) int8_t sub_effect_huoguang __attribute__((swift_name("sub_effect_huoguang")));
+@property (readonly) int8_t sub_effect_xuanzhuan __attribute__((swift_name("sub_effect_xuanzhuan")));
+@property (readonly) int8_t sub_effect_yuanxing __attribute__((swift_name("sub_effect_yuanxing")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH61DXSubEffect4LiuDong")))
+@interface SharedKmpH61DXSubEffect4LiuDong : SharedKmpH61DXAbsSub
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@property (class, readonly, getter=companion) SharedKmpH61DXSubEffect4LiuDongCompanion *companion __attribute__((swift_name("companion")));
+- (void)brightnessHighChangeValue:(int32_t)value __attribute__((swift_name("brightnessHighChange(value:)")));
+- (void)brightnessLowChangeValue:(int32_t)value __attribute__((swift_name("brightnessLowChange(value:)")));
+- (void)changeDirectionDirection:(int8_t)direction __attribute__((swift_name("changeDirection(direction:)")));
+- (NSMutableArray<SharedInt *> *)getCurColors __attribute__((swift_name("getCurColors()")));
+- (NSMutableArray<SharedByte *> * _Nullable)toBytesPos:(int32_t)pos msg:(void (^ _Nullable)(NSString *))msg __attribute__((swift_name("toBytes(pos:msg:)")));
+@property (readonly) SharedKotlinIntArray *blockNumRang __attribute__((swift_name("blockNumRang")));
+@property int8_t brightnessGradualType __attribute__((swift_name("brightnessGradualType")));
+@property BOOL colorGradual __attribute__((swift_name("colorGradual")));
+@property int8_t colorType __attribute__((swift_name("colorType")));
+@property NSMutableArray<SharedInt *> * _Nullable colors __attribute__((swift_name("colors")));
+@property int8_t direction __attribute__((swift_name("direction")));
+@property int8_t effectType __attribute__((swift_name("effectType")));
+@property BOOL entryAndExitEnable __attribute__((swift_name("entryAndExitEnable")));
+@property int32_t pieceNum __attribute__((swift_name("pieceNum")));
+@property (readonly) SharedKotlinIntArray *range4Brightness __attribute__((swift_name("range4Brightness")));
+@property int8_t subEffect __attribute__((swift_name("subEffect")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH61DXSubEffect4LiuDong.Companion")))
+@interface SharedKmpH61DXSubEffect4LiuDongCompanion : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedKmpH61DXSubEffect4LiuDongCompanion *shared __attribute__((swift_name("shared")));
+- (SharedKotlinPair<SharedByte *, SharedByte *> *)changeDirectionSubEffect:(int8_t)subEffect __attribute__((swift_name("changeDirection(subEffect:)")));
+- (SharedKmpH61DXSubEffect4LiuDong * _Nullable)parseEffectValue:(SharedKotlinByteArray *)effectValue __attribute__((swift_name("parse(effectValue:)")));
+@property (readonly) NSString *TAG __attribute__((swift_name("TAG")));
+@property (readonly) int8_t brightness_gradual_type_piece __attribute__((swift_name("brightness_gradual_type_piece")));
+@property (readonly) int8_t color_type_zhengDuan __attribute__((swift_name("color_type_zhengDuan")));
+@property (readonly) int8_t direction_effect_not_support __attribute__((swift_name("direction_effect_not_support")));
+@property (readonly) int8_t direction_hor __attribute__((swift_name("direction_hor")));
+@property (readonly) int8_t direction_ver __attribute__((swift_name("direction_ver")));
+@property (readonly) int8_t end_point __attribute__((swift_name("end_point")));
+@property (readonly) int8_t ju_long __attribute__((swift_name("ju_long")));
+@property (readonly) int8_t kuo_san __attribute__((swift_name("kuo_san")));
+@property (readonly) int8_t liuDong_sub_effect_dieJia __attribute__((swift_name("liuDong_sub_effect_dieJia")));
+@property (readonly) int8_t liuDong_sub_effect_fanFu __attribute__((swift_name("liuDong_sub_effect_fanFu")));
+@property (readonly) int8_t liuDong_sub_effect_gunDong __attribute__((swift_name("liuDong_sub_effect_gunDong")));
+@property (readonly) int8_t liuDong_sub_effect_yaoBai __attribute__((swift_name("liuDong_sub_effect_yaoBai")));
+@property (readonly) int8_t mian_jvlong __attribute__((swift_name("mian_jvlong")));
+@property (readonly) int8_t mian_kuosan __attribute__((swift_name("mian_kuosan")));
+@property (readonly) int8_t nishizhen __attribute__((swift_name("nishizhen")));
+@property (readonly) int32_t pro_brightness_change_style_changLiang __attribute__((swift_name("pro_brightness_change_style_changLiang")));
+@property (readonly) int32_t pro_brightness_change_style_custom __attribute__((swift_name("pro_brightness_change_style_custom")));
+@property (readonly) int8_t shunshizhen __attribute__((swift_name("shunshizhen")));
+@property (readonly) int8_t start_point __attribute__((swift_name("start_point")));
+@property (readonly) int8_t xian_nishizhen __attribute__((swift_name("xian_nishizhen")));
+@property (readonly) int8_t xian_shunshizhen __attribute__((swift_name("xian_shunshizhen")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH61DXSubEffect4SuiJi")))
+@interface SharedKmpH61DXSubEffect4SuiJi : SharedKmpH61DXAbsSub
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@property (class, readonly, getter=companion) SharedKmpH61DXSubEffect4SuiJiCompanion *companion __attribute__((swift_name("companion")));
+- (void)bgColorChangedRgbBytes:(SharedKotlinIntArray *)rgbBytes __attribute__((swift_name("bgColorChanged(rgbBytes:)")));
+- (void)colorChangedRgbBytes:(SharedKotlinIntArray *)rgbBytes __attribute__((swift_name("colorChanged(rgbBytes:)")));
+- (NSMutableArray<SharedInt *> *)getCurColors __attribute__((swift_name("getCurColors()")));
+- (NSMutableArray<SharedByte *> * _Nullable)toBytesPos:(int32_t)pos msg:(void (^ _Nullable)(NSString *))msg __attribute__((swift_name("toBytes(pos:msg:)")));
+@property int32_t bgColor __attribute__((swift_name("bgColor")));
+@property BOOL colorGradual __attribute__((swift_name("colorGradual")));
+@property BOOL colorPartSwitch __attribute__((swift_name("colorPartSwitch")));
+@property (readonly) NSMutableArray<SharedInt *> *colors __attribute__((swift_name("colors")));
+@property SharedKotlinByteArray *dieJia4SuiJiRange __attribute__((swift_name("dieJia4SuiJiRange")));
+@property int8_t direction __attribute__((swift_name("direction")));
+@property int32_t pieceNum __attribute__((swift_name("pieceNum")));
+@property int8_t subEffect __attribute__((swift_name("subEffect")));
+@property SharedKotlinByteArray *yueDong4ShanSuoRange __attribute__((swift_name("yueDong4ShanSuoRange")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH61DXSubEffect4SuiJi.Companion")))
+@interface SharedKmpH61DXSubEffect4SuiJiCompanion : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedKmpH61DXSubEffect4SuiJiCompanion *shared __attribute__((swift_name("shared")));
+- (SharedKmpH61DXSubEffect4SuiJi * _Nullable)parseEffectValue:(SharedKotlinByteArray *)effectValue __attribute__((swift_name("parse(effectValue:)")));
+@property (readonly) NSString *TAG __attribute__((swift_name("TAG")));
+@property (readonly) int8_t direction_zuo2You __attribute__((swift_name("direction_zuo2You")));
+@property (readonly) int8_t effect_type_xianXing __attribute__((swift_name("effect_type_xianXing")));
+@property (readonly) int8_t sub_effect_caiHui __attribute__((swift_name("sub_effect_caiHui")));
+@property (readonly) int8_t sub_effect_dieJia __attribute__((swift_name("sub_effect_dieJia")));
+@property (readonly) int8_t sub_effect_pingPu __attribute__((swift_name("sub_effect_pingPu")));
+@property (readonly) int8_t sub_effect_yueDong __attribute__((swift_name("sub_effect_yueDong")));
+@property (readonly) int8_t sub_effect_zhanFang __attribute__((swift_name("sub_effect_zhanFang")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH61DXSubEffect4XianXing")))
+@interface SharedKmpH61DXSubEffect4XianXing : SharedKmpH61DXAbsSub
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@property (class, readonly, getter=companion) SharedKmpH61DXSubEffect4XianXingCompanion *companion __attribute__((swift_name("companion")));
+- (void)changeDirectionDirection:(int8_t)direction __attribute__((swift_name("changeDirection(direction:)")));
+- (NSMutableArray<SharedInt *> *)getCurColors __attribute__((swift_name("getCurColors()")));
+- (NSMutableArray<SharedByte *> *)toBytesPos:(int32_t)pos msg:(void (^ _Nullable)(NSString *))msg __attribute__((swift_name("toBytes(pos:msg:)")));
+- (void)updateDirectionDirection:(int8_t)direction __attribute__((swift_name("updateDirection(direction:)")));
+@property int8_t colorDisplayModel __attribute__((swift_name("colorDisplayModel")));
+@property BOOL colorGradual __attribute__((swift_name("colorGradual")));
+@property (readonly) NSMutableArray<SharedInt *> *colors __attribute__((swift_name("colors")));
+@property int8_t direction __attribute__((swift_name("direction")));
+@property int8_t effectType __attribute__((swift_name("effectType")));
+@property BOOL entryAndExitEnable __attribute__((swift_name("entryAndExitEnable")));
+@property int32_t meteorsNum __attribute__((swift_name("meteorsNum")));
+@property int8_t subEffect __attribute__((swift_name("subEffect")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH61DXSubEffect4XianXing.Companion")))
+@interface SharedKmpH61DXSubEffect4XianXingCompanion : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedKmpH61DXSubEffect4XianXingCompanion *shared __attribute__((swift_name("shared")));
+- (SharedKmpH61DXSubEffect4XianXing * _Nullable)parseEffectValue:(SharedKotlinByteArray *)effectValue __attribute__((swift_name("parse(effectValue:)")));
+@property (readonly) NSString *TAG __attribute__((swift_name("TAG")));
+@property (readonly) int8_t color_type_zhengDuan __attribute__((swift_name("color_type_zhengDuan")));
+@property (readonly) int8_t effectDirectionNi __attribute__((swift_name("effectDirectionNi")));
+@property (readonly) int8_t meteorsNum_single __attribute__((swift_name("meteorsNum_single")));
+@property (readonly) int8_t sub_effect_caihong __attribute__((swift_name("sub_effect_caihong")));
+@property (readonly) int8_t sub_effect_danrudanchu __attribute__((swift_name("sub_effect_danrudanchu")));
+@property (readonly) int8_t sub_effect_huxi __attribute__((swift_name("sub_effect_huxi")));
+@property (readonly) int8_t sub_effect_liuxing __attribute__((swift_name("sub_effect_liuxing")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -3516,6 +4052,18 @@ __attribute__((swift_name("Kotlinx_serialization_coreKSerializer")))
 @end
 
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinArray")))
+@interface SharedKotlinArray<T> : SharedBase
++ (instancetype)arrayWithSize:(int32_t)size init:(T _Nullable (^)(SharedInt *))init __attribute__((swift_name("init(size:init:)")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (T _Nullable)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
+- (id<SharedKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
+- (void)setIndex:(int32_t)index value:(T _Nullable)value __attribute__((swift_name("set(index:value:)")));
+@property (readonly) int32_t size __attribute__((swift_name("size")));
+@end
+
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("KotlinTriple")))
 @interface SharedKotlinTriple<__covariant A, __covariant B, __covariant C> : SharedBase
 - (instancetype)initWithFirst:(A _Nullable)first second:(B _Nullable)second third:(C _Nullable)third __attribute__((swift_name("init(first:second:third:)"))) __attribute__((objc_designated_initializer));
@@ -3526,18 +4074,6 @@ __attribute__((swift_name("KotlinTriple")))
 @property (readonly) A _Nullable first __attribute__((swift_name("first")));
 @property (readonly) B _Nullable second __attribute__((swift_name("second")));
 @property (readonly) C _Nullable third __attribute__((swift_name("third")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("KotlinArray")))
-@interface SharedKotlinArray<T> : SharedBase
-+ (instancetype)arrayWithSize:(int32_t)size init:(T _Nullable (^)(SharedInt *))init __attribute__((swift_name("init(size:init:)")));
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-- (T _Nullable)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
-- (id<SharedKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
-- (void)setIndex:(int32_t)index value:(T _Nullable)value __attribute__((swift_name("set(index:value:)")));
-@property (readonly) int32_t size __attribute__((swift_name("size")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -3576,6 +4112,18 @@ __attribute__((swift_name("KotlinException")))
 - (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)initWithCause:(SharedKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)initWithMessage:(NSString * _Nullable)message cause:(SharedKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinPair")))
+@interface SharedKotlinPair<__covariant A, __covariant B> : SharedBase
+- (instancetype)initWithFirst:(A _Nullable)first second:(B _Nullable)second __attribute__((swift_name("init(first:second:)"))) __attribute__((objc_designated_initializer));
+- (SharedKotlinPair<A, B> *)doCopyFirst:(A _Nullable)first second:(B _Nullable)second __attribute__((swift_name("doCopy(first:second:)")));
+- (BOOL)equalsOther:(id _Nullable)other __attribute__((swift_name("equals(other:)")));
+- (int32_t)hashCode __attribute__((swift_name("hashCode()")));
+- (NSString *)toString __attribute__((swift_name("toString()")));
+@property (readonly) A _Nullable first __attribute__((swift_name("first")));
+@property (readonly) B _Nullable second __attribute__((swift_name("second")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -3654,18 +4202,6 @@ __attribute__((swift_name("KotlinShortArray")))
 - (SharedKotlinShortIterator *)iterator __attribute__((swift_name("iterator()")));
 - (void)setIndex:(int32_t)index value:(int16_t)value __attribute__((swift_name("set(index:value:)")));
 @property (readonly) int32_t size __attribute__((swift_name("size")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("KotlinPair")))
-@interface SharedKotlinPair<__covariant A, __covariant B> : SharedBase
-- (instancetype)initWithFirst:(A _Nullable)first second:(B _Nullable)second __attribute__((swift_name("init(first:second:)"))) __attribute__((objc_designated_initializer));
-- (SharedKotlinPair<A, B> *)doCopyFirst:(A _Nullable)first second:(B _Nullable)second __attribute__((swift_name("doCopy(first:second:)")));
-- (BOOL)equalsOther:(id _Nullable)other __attribute__((swift_name("equals(other:)")));
-- (int32_t)hashCode __attribute__((swift_name("hashCode()")));
-- (NSString *)toString __attribute__((swift_name("toString()")));
-@property (readonly) A _Nullable first __attribute__((swift_name("first")));
-@property (readonly) B _Nullable second __attribute__((swift_name("second")));
 @end
 
 
