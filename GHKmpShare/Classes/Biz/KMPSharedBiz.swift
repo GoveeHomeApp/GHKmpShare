@@ -120,8 +120,13 @@ public class KMPSharedBiz: NSObject {
         if self.isSupportSceneBiz(param: param, device: device), let pt = self.currentKmpProtocol {
             let info: KmpToneColorListInfo = pt.getToneColors()
             let cls = info.list.compactMap { KmpToneColorsVo(h: Int(Float($0.h)), colors: $0.toneColorList.map { $0.toSwiftInt()})}
-            if let baseColor = info.baseColor {
-                cls.forEach { $0.baseColor = Int(truncating: baseColor) }
+            cls.forEach {
+                if let baseColor = info.baseColor {
+                    $0.baseColor = Int(truncating: baseColor)
+                }
+                if let bH = info.baseColorH {
+                    $0.baseH = bH.intValue
+                }
             }
             return cls
         }

@@ -885,12 +885,13 @@ __attribute__((swift_name("KmpToneColorInfo")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("KmpToneColorListInfo")))
 @interface SharedKmpToneColorListInfo : SharedBase
-- (instancetype)initWithBaseColor:(SharedInt * _Nullable)baseColor list:(NSArray<SharedKmpToneColorInfo *> *)list __attribute__((swift_name("init(baseColor:list:)"))) __attribute__((objc_designated_initializer));
-- (SharedKmpToneColorListInfo *)doCopyBaseColor:(SharedInt * _Nullable)baseColor list:(NSArray<SharedKmpToneColorInfo *> *)list __attribute__((swift_name("doCopy(baseColor:list:)")));
+- (instancetype)initWithBaseColor:(SharedInt * _Nullable)baseColor baseColorH:(SharedFloat * _Nullable)baseColorH list:(NSArray<SharedKmpToneColorInfo *> *)list __attribute__((swift_name("init(baseColor:baseColorH:list:)"))) __attribute__((objc_designated_initializer));
+- (SharedKmpToneColorListInfo *)doCopyBaseColor:(SharedInt * _Nullable)baseColor baseColorH:(SharedFloat * _Nullable)baseColorH list:(NSArray<SharedKmpToneColorInfo *> *)list __attribute__((swift_name("doCopy(baseColor:baseColorH:list:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) SharedInt * _Nullable baseColor __attribute__((swift_name("baseColor")));
+@property (readonly) SharedFloat * _Nullable baseColorH __attribute__((swift_name("baseColorH")));
 @property (readonly) NSArray<SharedKmpToneColorInfo *> *list __attribute__((swift_name("list")));
 @end
 
@@ -3855,6 +3856,7 @@ __attribute__((swift_name("KmpColorUtils")))
 - (int32_t)convertColorByAlphaColor:(int32_t)color newAlpha:(float)newAlpha __attribute__((swift_name("convertColorByAlpha(color:newAlpha:)")));
 - (NSArray<SharedKmpToneColorInfo *> *)generateToneColorsColors:(NSArray<SharedInt *> * _Nullable)colors __attribute__((swift_name("generateToneColors(colors:)")));
 - (int32_t)getColorTemKelvinColorTem:(int32_t)colorTem minKelvin:(int32_t)minKelvin maxKelvin:(int32_t)maxKelvin __attribute__((swift_name("getColorTemKelvin(colorTem:minKelvin:maxKelvin:)")));
+- (SharedFloat * _Nullable)getNullableRgbColorHColor:(SharedInt * _Nullable)color __attribute__((swift_name("getNullableRgbColorH(color:)")));
 - (SharedKotlinIntArray *)getRgbColor:(int32_t)color __attribute__((swift_name("getRgb(color:)")));
 - (SharedKotlinByteArray *)getRgbBytesColor:(int32_t)color __attribute__((swift_name("getRgbBytes(color:)")));
 - (float)getRgbColorHColor:(int32_t)color __attribute__((swift_name("getRgbColorH(color:)")));

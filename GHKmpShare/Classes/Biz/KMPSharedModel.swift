@@ -14,6 +14,8 @@ import Shared
 public class KmpToneColorsVo:NSObject, HandyJSON {
     /// 基色颜色
     public var baseColor: Int? = nil
+    /// 基色h
+    public var baseH: Int = 0
     /// 底色h
     public var h: Int = 0
     /// 对应颜色组
