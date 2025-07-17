@@ -717,6 +717,7 @@ __attribute__((swift_name("KmpH61DXConfigInfo")))
 @property (class, readonly, getter=companion) SharedKmpH61DXConfigInfoCompanion *companion __attribute__((swift_name("companion")));
 @property int32_t defDirIndex __attribute__((swift_name("defDirIndex")));
 @property int32_t defSpeedIndex __attribute__((swift_name("defSpeedIndex")));
+@property SharedInt * _Nullable speedType __attribute__((swift_name("speedType")));
 @property SharedKotlinIntArray * _Nullable supportDirections __attribute__((swift_name("supportDirections")));
 @property SharedKotlinArray<SharedKotlinIntArray *> * _Nullable supportSpeedConfigs __attribute__((swift_name("supportSpeedConfigs")));
 @end
@@ -3986,7 +3987,7 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("KmpJsonUtilsKt")))
 @interface SharedKmpJsonUtilsKt : SharedBase
 + (id _Nullable)fromJson:(NSString *)receiver __attribute__((swift_name("fromJson(_:)")));
-+ (SharedKotlinx_serialization_jsonJsonElement *)parseToJsonElement:(NSString *)receiver __attribute__((swift_name("parseToJsonElement(_:)")));
++ (SharedKotlinx_serialization_jsonJsonElement * _Nullable)parseToJsonElement:(NSString *)receiver __attribute__((swift_name("parseToJsonElement(_:)")));
 + (NSString *)toJson:(id _Nullable)receiver __attribute__((swift_name("toJson(_:)")));
 @property (class, readonly) SharedKotlinx_serialization_jsonJson *kmpJson __attribute__((swift_name("kmpJson")));
 @end
