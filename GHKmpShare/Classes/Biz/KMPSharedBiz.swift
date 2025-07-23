@@ -119,6 +119,11 @@ public class KMPSharedBiz: NSObject {
     public func toneColorInfo(param: [String: Any]?, device: [String: Any]?) -> [KmpToneColorsVo]? {
         if self.isSupportSceneBiz(param: param, device: device), let pt = self.currentKmpProtocol {
             let info: KmpToneColorListInfo = pt.getToneColors()
+//            print("log.pp ===== \(info.baseColorH)")
+//            print("log.pp ===== \(info.baseColor)")
+//            for ton in info.list {
+//                print("log.pp item ===== base: \(ton.h) list: \(ton.toneColorList)")
+//            }
             let cls = info.list.compactMap { KmpToneColorsVo(h: Int(Float($0.h)), colors: $0.toneColorList.map { $0.toSwiftInt()})}
             cls.forEach {
                 if let baseColor = info.baseColor {
