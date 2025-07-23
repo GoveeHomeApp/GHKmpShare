@@ -143,14 +143,14 @@ class ColorTableViewCell: UITableViewCell {
             if index < toneColorVo.count {
                 let colorInt = toneColorVo[index]
                 
-                let color = UIColor.fromBGR(colorInt)
-                color.printHexValue()
-                colorView.backgroundColor = color
+//                let color = UIColor.fromBGR(colorInt)
+//                color.printHexValue()
+//                colorView.backgroundColor = color
                 
-//                if let color = UIColor(hex: colorInt) {
-//                    color.printHexValue()
-//                    colorView.backgroundColor = color
-//                }
+                if let color = UIColor(hex: colorInt) {
+                    color.printHexValue()
+                    colorView.backgroundColor = color
+                }
             }
         }
     }

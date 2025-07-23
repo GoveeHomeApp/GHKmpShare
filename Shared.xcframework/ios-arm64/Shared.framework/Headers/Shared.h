@@ -1148,6 +1148,7 @@ __attribute__((swift_name("KmpLayerPaintingData")))
 - (instancetype)initWithDurationTime:(int32_t)durationTime pngBytes:(SharedKotlinByteArray *)pngBytes color4Paint:(int32_t)color4Paint __attribute__((swift_name("init(durationTime:pngBytes:color4Paint:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)initWithGraffitiType:(int8_t)graffitiType defDuration:(int32_t)defDuration __attribute__((swift_name("init(graffitiType:defDuration:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 - (SharedKmpLayerPaintingData *)doCopy __attribute__((swift_name("doCopy()")));
+- (NSArray<SharedInt *> *)getColorList __attribute__((swift_name("getColorList()")));
 - (SharedKotlinByteArray *)getLayerDataOffsetH:(float)offsetH __attribute__((swift_name("getLayerData(offsetH:)")));
 - (int32_t)getPaintColor __attribute__((swift_name("getPaintColor()")));
 - (BOOL)haveData __attribute__((swift_name("haveData()")));
@@ -2517,7 +2518,17 @@ __attribute__((swift_name("KmpH663XAbsSub")))
  * @note This property has protected visibility in Kotlin source and is intended only for use by subclasses.
 */
 @property (readonly) NSString *TAG __attribute__((swift_name("TAG")));
+
+/**
+ * @note This property has protected visibility in Kotlin source and is intended only for use by subclasses.
+*/
+@property (readonly) SharedFloat * _Nullable baseH __attribute__((swift_name("baseH")));
 @property (readonly) NSMutableArray<SharedInt *> *colors __attribute__((swift_name("colors")));
+
+/**
+ * @note This property has protected visibility in Kotlin source and is intended only for use by subclasses.
+*/
+@property SharedFloat * _Nullable h __attribute__((swift_name("h")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -3459,6 +3470,7 @@ __attribute__((swift_name("Layer")))
 @property (class, readonly, getter=companion) SharedLayerCompanion *companion __attribute__((swift_name("companion")));
 - (NSMutableArray<SharedByte *> * _Nullable)bytesPos:(int32_t)pos msg:(void (^)(NSString *))msg __attribute__((swift_name("bytes(pos:msg:)")));
 - (BOOL)changeSubEffectSubEffect:(int8_t)subEffect __attribute__((swift_name("changeSubEffect(subEffect:)")));
+- (NSMutableArray<SharedInt *> *)getLayerColors __attribute__((swift_name("getLayerColors()")));
 - (void)syncLayer:(SharedLayer *)layer __attribute__((swift_name("sync(layer:)")));
 - (void)updateSpeedDirectionSpeed:(int32_t)speed direction:(int32_t)direction __attribute__((swift_name("updateSpeedDirection(speed:direction:)")));
 @end
@@ -3854,6 +3866,7 @@ __attribute__((swift_name("KmpColorUtils")))
 - (NSArray<SharedInt *> *)changeColorListHColors:(NSArray<SharedInt *> * _Nullable)colors h:(SharedFloat * _Nullable)h __attribute__((swift_name("changeColorListH(colors:h:)")));
 - (NSArray<SharedInt *> *)colorListOffsetHColors:(NSArray<SharedInt *> * _Nullable)colors offsetH:(float)offsetH __attribute__((swift_name("colorListOffsetH(colors:offsetH:)")));
 - (int32_t)convertColorByAlphaColor:(int32_t)color newAlpha:(float)newAlpha __attribute__((swift_name("convertColorByAlpha(color:newAlpha:)")));
+- (NSArray<SharedInt *> *)filterHSVColor:(NSArray<SharedInt *> *)receiver __attribute__((swift_name("filterHSVColor(_:)")));
 - (NSArray<SharedKmpToneColorInfo *> *)generateToneColorsColors:(NSArray<SharedInt *> * _Nullable)colors __attribute__((swift_name("generateToneColors(colors:)")));
 - (int32_t)getColorTemKelvinColorTem:(int32_t)colorTem minKelvin:(int32_t)minKelvin maxKelvin:(int32_t)maxKelvin __attribute__((swift_name("getColorTemKelvin(colorTem:minKelvin:maxKelvin:)")));
 - (SharedFloat * _Nullable)getNullableRgbColorHColor:(SharedInt * _Nullable)color __attribute__((swift_name("getNullableRgbColorH(color:)")));
