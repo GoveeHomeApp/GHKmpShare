@@ -96,7 +96,7 @@ public class KMPSharedBiz: NSObject {
     public func changeDirection(code: Int = 0, param: [String: Any]?, device: [String: Any]?) -> String? {
         var res: String? = nil
         if self.isSupportSceneBiz(param: param, device: device), let pt = self.currentKmpProtocol, let bizParam = self.currentScene?.dto {
-            let speedConfig = bizParam.speedInfo?["config"] as? String ?? ""
+            let speedConfig = bizParam.speedModel?["config"] as? String ?? ""
             pt.updateDirection(directionOrIndex: KotlinInt(int: Int32(code)), config: speedConfig)
             res = _getCurrentBytes()
         }
@@ -107,7 +107,7 @@ public class KMPSharedBiz: NSObject {
     public func changeSpeed(value: Int = 0, param: [String: Any]?, device: [String: Any]?) -> String? {
         var res: String? = nil
         if self.isSupportSceneBiz(param: param, device: device), let pt = self.currentKmpProtocol, let bizParam = self.currentScene?.dto {
-            let speedConfig = bizParam.speedInfo?["config"] as? String ?? ""
+            let speedConfig = bizParam.speedModel?["config"] as? String ?? ""
             pt.updateSpeed(speedOrIndex: KotlinInt(int: Int32(value)), config: speedConfig)
             res = _getCurrentBytes()
         }
@@ -143,11 +143,11 @@ public class KMPSharedBiz: NSObject {
     public func changeAll(speedVal: Int? = nil, directionVal: Int? = nil, colorH: Int? = nil, param: [String: Any]?, device: [String: Any]?) -> String? {
         if self.isSupportSceneBiz(param: param, device: device), let pt = self.currentKmpProtocol {
             if let spd = speedVal, let bizParam = self.currentScene?.dto {
-                let speedConfig = bizParam.speedInfo?["config"] as? String ?? ""
+                let speedConfig = bizParam.speedModel?["config"] as? String ?? ""
                 pt.updateSpeed(speedOrIndex: KotlinInt(int: Int32(spd)), config: speedConfig)
             }
             if let dir = directionVal, let bizParam = self.currentScene?.dto {
-                let speedConfig = bizParam.speedInfo?["config"] as? String ?? ""
+                let speedConfig = bizParam.speedModel?["config"] as? String ?? ""
                 pt.updateDirection(directionOrIndex: KotlinInt(int: Int32(dir)), config: speedConfig)
             }
             if let h = colorH {
@@ -164,7 +164,7 @@ public class KMPSharedBiz: NSObject {
      */
     public func getSceneConfig(param: [String: Any]?, device: [String: Any]?) -> KmpConfigVo? {
         if self.isSupportSceneBiz(param: param, device: device), let dv = KmpDeviceDto.deserialize(from: device), let bizParam = self.currentScene?.dto {
-            let speedConfig = bizParam.speedInfo?["config"] as? String ?? ""
+            let speedConfig = bizParam.speedModel?["config"] as? String ?? ""
             var extString = ""
             
             if let dict = dv.deviceExt, let jsonData = try?JSONSerialization.data(withJSONObject: dict, options: []) {
