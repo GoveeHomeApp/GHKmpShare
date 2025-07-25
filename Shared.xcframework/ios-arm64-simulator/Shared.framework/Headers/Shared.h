@@ -6,7 +6,7 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class SharedKmpProtocolHelper, SharedKmpSceneConfigInfo, SharedKmpDeviceInfo, SharedKotlinByteArray, SharedKmpGoodsType, SharedKmpInfoChecker, SharedKmpSku, SharedKmpBrightModeCompanion, SharedKotlinIntArray, SharedKmpColorListInfo, SharedKmpDeviceInfoCompanion, SharedKmpH6020DirectionCompanion, SharedKmpH6020Speed, SharedKmpH6020Direction, SharedKmpH6020DirectionSpeedInfoCompanion, SharedKmpH6020DirectionSpeedInfo, SharedKmpH6020GraffitiSceneSpeedBeanExt, SharedKmpH6020GraffitiSceneSpeedBeanCompanion, SharedKmpH6020GraffitiSceneSpeedBeanExtCompanion, SharedKmpH6020SpeedCompanion, SharedKmpH61DXConfigInfoCompanion, SharedKotlinArray<T>, SharedKmpH70CXSpeedModeCompanion, SharedKmpSceneSpeedInfo, SharedKmpSceneDirectionInfo, SharedKmpSceneSpeedInfoCompanion, SharedKmpSpeedInfoCompanion, SharedKmpSpeedInfo, SharedKmpSpeedModeCompanion, SharedKmpBrightMode, SharedKmpToneColorInfo, SharedKmpToneColorListInfo, SharedAbsKmpProtocol, SharedKmpCommonProtocol0x00Companion, SharedKmpCommonProtocol0x00, SharedKmpRgbICGraffitiShareProtocol0x08Companion, SharedKmpRgbICGraffitiShareProtocol0x08, SharedKotlinTriple<__covariant A, __covariant B, __covariant C>, SharedKmpCellGraffitiDataNewProtocolCompanion, SharedKmpLayersInfo, SharedKmpCellGraffitiDataNewProtocol, SharedKmpDiyGraffitiV2, SharedKmpGraffitiDefaultData, SharedKmpGraffitiSendDataCompanion, SharedKmpLayerBase, SharedKmpLayerPaintingData, SharedMoveLayer, SharedTextGravity, SharedTextSize, SharedLayerTextData, SharedKotlinEnumCompanion, SharedKotlinEnum<E>, SharedKmpH6020AbsSub, SharedKmpH6020CaiHongCompanion, SharedKmpH6020CaiHong, SharedKmpH6020CaiQiangCompanion, SharedKmpH6020CaiQiang, SharedKmpH6020CellGraffitiDataNewProtocolCompanion, SharedKmpH6020CellGraffitiDataNewProtocol, SharedKmpH6020DangYangCompanion, SharedKmpH6020DangYang, SharedKmpH6020DuiJi4ShangXiaCompanion, SharedKmpH6020DuiJi4ShangXia, SharedKmpH6020DuiJi4XingZhuangCompanion, SharedKmpH6020DuiJi4XingZhuang, SharedKmpH6020HuXiCompanion, SharedKmpH6020HuXi, SharedKmpH6020HuoYanCompanion, SharedKmpH6020HuoYan, SharedKmpH6020JianBianCompanion, SharedKmpH6020JianBian, SharedKmpH6020JiaoTi4ShangXiaCompanion, SharedKmpH6020JiaoTi4ShangXia, SharedKmpH6020JiaoTi4XingZhuangCompanion, SharedKmpH6020JiaoTi4XingZhuang, SharedKmpH6020LayerPaintingData, SharedKmpH6020LayersInfoCompanion, SharedKmpH6020LianYiCompanion, SharedKmpH6020LianYi, SharedKmpH6020MengHuanCompanion, SharedKmpH6020MengHuan, SharedKmpH6020ProtocolCompanion, SharedKmpH6020ShenSuo4ShangXia, SharedKmpH6020ShenSuo4XingZhuang, SharedKmpH6020TanChiShe, SharedKmpH6020TanTiaoQiu, SharedKmpH6020TiaoWen, SharedKmpH6020XiaoXiaoLe, SharedKmpH6020YanHua, SharedKmpH6020YueDong, SharedKmpH6020YunRan, SharedKmpH6020Protocol, SharedKmpH6020ShenSuo4ShangXiaCompanion, SharedKmpH6020ShenSuo4XingZhuangCompanion, SharedKmpH6020TanChiSheCompanion, SharedKmpH6020TanTiaoQiuCompanion, SharedKmpH6020TiaoWenCompanion, SharedKmpH6020XiaoXiaoLeCompanion, SharedKmpH6020YanHuaCompanion, SharedKmpH6020YueDongCompanion, SharedKmpH6020YunRanCompanion, SharedKmpH6063PageEffectCompanion, SharedLayerPointMsg, SharedKmpH61DXAbsSub, SharedKmpH6063SubEffectFlickering, SharedKmpH6063SubEffectFlow, SharedKmpH6063SubEffectStretch, SharedKmpH6063PageEffect, SharedKmpH6063ProtocolCompanion, SharedKotlinPair<__covariant A, __covariant B>, SharedKmpH6063Protocol, SharedKmpH6063SubEffectFlickeringCompanion, SharedKmpH6063SubEffectFlowCompanion, SharedKmpH6063SubEffectStretchCompanion, SharedKmpH61DXPageEffectCompanion, SharedKmpH61DXSubEffect4DuiJi, SharedKmpH61DXSubEffect4JiHe, SharedKmpH61DXSubEffect4LiuDong, SharedKmpH61DXSubEffect4SuiJi, SharedKmpH61DXSubEffect4XianXing, SharedKmpH61DXPageEffect, SharedKmpH61DXProtocolCompanion, SharedKmpH61DXProtocol, SharedKmpH61DXSubEffect4DuiJiCompanion, SharedKmpH61DXSubEffect4JiHeCompanion, SharedKmpH61DXSubEffect4LiuDongCompanion, SharedKmpH61DXSubEffect4SuiJiCompanion, SharedKmpH61DXSubEffect4XianXingCompanion, SharedKmpH6630GraffitiProtocolCompanion, SharedKmpH6630GraffitiProtocol, SharedKmpH6630ProtocolCompanion, SharedKmpH663XXuanZhuan4BoBanTang, SharedKmpH663XBoDong4BoFeng, SharedKmpH663XYunRan4CaiQiang, SharedKmpH663XXuanZhuan4DaFengChe, SharedKmpH663XLiuDong4DieJia, SharedKmpH663XYunRan4FuGai, SharedKmpH663XXianXing4PenShe, SharedKmpH663XLiuDong4ShenSuo, SharedKmpH663XBoDong4ShuangLuoXuan, SharedKmpH663XSuiJi4TanChiShe, SharedKmpH663XSuiJi4TanTiaoQiu, SharedKmpH663XXianXing4TianChong, SharedKmpH663XXianXing4XiangSu, SharedKmpH663XSuiJi4XiaoXiaoLe, SharedKmpH663XSuiJi4YanHua, SharedKmpH6630Protocol, SharedKmpH663XAbsSub, SharedKmpH663XBoDong4BoFengCompanion, SharedKmpH663XBoDong4ShuangLuoXuanCompanion, SharedKmpH663XDirectionConfigCompanion, SharedKmpH663XJuLongKuoSanConfigCompanion, SharedKmpH663XLiuDong4DieJiaCompanion, SharedKmpH663XLiuDong4ShenSuoCompanion, SharedKmpH663XProtocolHelper, SharedKmpH663XSuiJi4TanChiSheCompanion, SharedKmpH663XSuiJi4TanTiaoQiuCompanion, SharedKmpH663XSuiJi4XiaoXiaoLeCompanion, SharedKmpH663XSuiJi4YanHuaCompanion, SharedKmpH663XXianXing4PenSheCompanion, SharedKmpH663XXianXing4TianChongCompanion, SharedKmpH663XXianXing4XiangSuCompanion, SharedKmpH663XXuanZhuan4BoBanTangCompanion, SharedKmpH663XXuanZhuan4DaFengCheCompanion, SharedKmpH663XYunRan4CaiQiangCompanion, SharedKmpH663XYunRan4FuGaiCompanion, SharedKmpH70CXBrightnessConfigCompanion, SharedKmpH70CXDirectionConfigCompanion, SharedKmpH70CXJiDianConfigCompanion, SharedKmpH70CXProtocolCompanion, SharedKmpH70CXProtocol, SharedKmpH70CXSubEffectConfigCompanion, SharedKmpH70CXAbsSub, SharedKmpH70CXSub4CaiHongCompanion, SharedKmpH70CXSub4CaiHong, SharedKmpH70CXSub4FenCengCompanion, SharedKmpH70CXSub4FenCeng, SharedKmpH70CXSub4HuoYanCompanion, SharedKmpH70CXSub4HuoYan, SharedKmpH70CXSub4KuoSanCompanion, SharedKmpH70CXSub4KuoSan, SharedKmpH70CXSub4LiuDongCompanion, SharedKmpH70CXSub4LiuDong, SharedKmpH70CXSub4LuoXuanCompanion, SharedKmpH70CXSub4LuoXuan, SharedKmpH70CXSub4TongXinYuanCompanion, SharedKmpH70CXSub4TongXinYuan, SharedKmpH70CXSub4XingGuangCompanion, SharedKmpH70CXSub4XingGuang, SharedKmpH70CXSub4XuanWoCompanion, SharedKmpH70CXSub4XuanWo, SharedKmpH70CXSub4XuanZhuanCompanion, SharedKmpH70CXSub4XuanZhuan, SharedKmpH70CXSub4ZhuiZhuCompanion, SharedKmpH70CXSub4ZhuiZhu, SharedLayerCompanion, SharedLayer, SharedSub4MultiLayerCompanion, SharedSub4MultiLayer, SharedKmpAreaMoveEffectCompanion, SharedKmpAreaMoveEffect, SharedKmpBrightnessEffectCompanion, SharedKmpBrightnessEffect, SharedKmpColorEffectCompanion, SharedKmpColorEffect, SharedKmpInAreaMoveEffectCompanion, SharedKmpInAreaMoveEffect, SharedKmpRgbICEffectCompanion, SharedKmpRgbICEffect, SharedKmpRgbICProtocolCompanion, SharedKmpRgbICProtocol, SharedKmpArrayUtils, SharedKotlinBooleanArray, SharedKotlinCharArray, SharedKotlinDoubleArray, SharedKotlinFloatArray, SharedKotlinLongArray, SharedKotlinShortArray, SharedKmpBleUtils, SharedKmpByteUtils, SharedKmpColorUtils, SharedKmpConstants, SharedKmpImageConverterManager, SharedKmpLog, SharedKmpLogManager, SharedKotlinx_serialization_jsonJsonElement, SharedKotlinx_serialization_jsonJson, SharedKotlinByteIterator, SharedKotlinIntIterator, SharedKotlinThrowable, SharedKotlinBooleanIterator, SharedKotlinCharIterator, SharedKotlinDoubleIterator, SharedKotlinFloatIterator, SharedKotlinLongIterator, SharedKotlinShortIterator, SharedKotlinx_serialization_jsonJsonElementCompanion, SharedKotlinx_serialization_coreSerializersModule, SharedKotlinx_serialization_jsonJsonDefault, SharedKotlinx_serialization_jsonJsonConfiguration, SharedKotlinx_serialization_coreSerialKind, SharedKotlinNothing, SharedKotlinx_serialization_jsonClassDiscriminatorMode;
+@class SharedKmpProtocolHelper, SharedKmpSceneConfigInfo, SharedKmpDeviceInfo, SharedKotlinByteArray, SharedKmpGoodsType, SharedKmpInfoChecker, SharedKmpSku, SharedKmpBrightModeCompanion, SharedKotlinIntArray, SharedKmpColorListInfo, SharedKmpDeviceInfoCompanion, SharedKmpH6020DirectionCompanion, SharedKmpH6020Speed, SharedKmpH6020Direction, SharedKmpH6020DirectionSpeedInfoCompanion, SharedKmpH6020DirectionSpeedInfo, SharedKmpH6020GraffitiSceneSpeedBeanExt, SharedKmpH6020GraffitiSceneSpeedBeanCompanion, SharedKmpH6020GraffitiSceneSpeedBeanExtCompanion, SharedKmpH6020SpeedCompanion, SharedKmpH61DXConfigInfoCompanion, SharedKotlinArray<T>, SharedKmpH70CXSpeedModeCompanion, SharedKmpSceneSpeedInfo, SharedKmpSceneDirectionInfo, SharedKmpSceneSpeedInfoCompanion, SharedKmpSpeedInfoCompanion, SharedKmpSpeedInfo, SharedKmpSpeedModeCompanion, SharedKmpBrightMode, SharedKmpToneColorInfo, SharedKmpToneColorListInfo, SharedAbsKmpProtocol, SharedKmpCommonProtocol0x00Companion, SharedKmpCommonProtocol0x00, SharedKmpRgbICGraffitiShareProtocol0x08Companion, SharedKmpRgbICGraffitiShareProtocol0x08, SharedKotlinTriple<__covariant A, __covariant B, __covariant C>, SharedKmpCellGraffitiDataNewProtocolCompanion, SharedKmpLayersInfo, SharedKmpCellGraffitiDataNewProtocol, SharedKmpDiyGraffitiV2, SharedKmpGraffitiDefaultData, SharedKmpGraffitiSendDataCompanion, SharedKmpLayerBase, SharedKmpLayerPaintingData, SharedMoveLayer, SharedTextGravity, SharedTextSize, SharedLayerTextData, SharedKotlinEnumCompanion, SharedKotlinEnum<E>, SharedKmpH6020AbsSub, SharedKmpH6020CaiHongCompanion, SharedKmpH6020CaiHong, SharedKmpH6020CaiQiangCompanion, SharedKmpH6020CaiQiang, SharedKmpH6020CellGraffitiDataNewProtocolCompanion, SharedKmpH6020CellGraffitiDataNewProtocol, SharedKmpH6020DangYangCompanion, SharedKmpH6020DangYang, SharedKmpH6020DuiJi4ShangXiaCompanion, SharedKmpH6020DuiJi4ShangXia, SharedKmpH6020DuiJi4XingZhuangCompanion, SharedKmpH6020DuiJi4XingZhuang, SharedKmpH6020HuXiCompanion, SharedKmpH6020HuXi, SharedKmpH6020HuoYanCompanion, SharedKmpH6020HuoYan, SharedKmpH6020JianBianCompanion, SharedKmpH6020JianBian, SharedKmpH6020JiaoTi4ShangXiaCompanion, SharedKmpH6020JiaoTi4ShangXia, SharedKmpH6020JiaoTi4XingZhuangCompanion, SharedKmpH6020JiaoTi4XingZhuang, SharedKmpH6020LayerPaintingData, SharedKmpH6020LayersInfoCompanion, SharedKmpH6020LianYiCompanion, SharedKmpH6020LianYi, SharedKmpH6020MengHuanCompanion, SharedKmpH6020MengHuan, SharedKmpH6020ProtocolCompanion, SharedKmpH6020ShenSuo4ShangXia, SharedKmpH6020ShenSuo4XingZhuang, SharedKmpH6020TanChiShe, SharedKmpH6020TanTiaoQiu, SharedKmpH6020TiaoWen, SharedKmpH6020XiaoXiaoLe, SharedKmpH6020YanHua, SharedKmpH6020YueDong, SharedKmpH6020YunRan, SharedKmpH6020Protocol, SharedKmpH6020ShenSuo4ShangXiaCompanion, SharedKmpH6020ShenSuo4XingZhuangCompanion, SharedKmpH6020TanChiSheCompanion, SharedKmpH6020TanTiaoQiuCompanion, SharedKmpH6020TiaoWenCompanion, SharedKmpH6020XiaoXiaoLeCompanion, SharedKmpH6020YanHuaCompanion, SharedKmpH6020YueDongCompanion, SharedKmpH6020YunRanCompanion, SharedKmpH6063PageEffectCompanion, SharedLayerPointMsg, SharedKmpH61DXAbsSub, SharedKmpH6063SubEffectFlickering, SharedKmpH6063SubEffectFlow, SharedKmpH6063SubEffectStretch, SharedKmpH6063PageEffect, SharedKmpH6063ProtocolCompanion, SharedKotlinPair<__covariant A, __covariant B>, SharedKmpH6063Protocol, SharedKmpH6063SubEffectFlickeringCompanion, SharedKmpH6063SubEffectFlowCompanion, SharedKmpH6063SubEffectStretchCompanion, SharedKmpH61DXPageEffectCompanion, SharedKmpH61DXSubEffect4DuiJi, SharedKmpH61DXSubEffect4JiHe, SharedKmpH61DXSubEffect4LiuDong, SharedKmpH61DXSubEffect4SuiJi, SharedKmpH61DXSubEffect4XianXing, SharedKmpH61DXPageEffect, SharedKmpH61DXProtocolCompanion, SharedKmpH61DXProtocol, SharedKmpH61DXSubEffect4DuiJiCompanion, SharedKmpH61DXSubEffect4JiHeCompanion, SharedKmpH61DXSubEffect4LiuDongCompanion, SharedKmpH61DXSubEffect4SuiJiCompanion, SharedKmpH61DXSubEffect4XianXingCompanion, SharedKmpH6630GraffitiProtocolCompanion, SharedKmpH6630GraffitiProtocol, SharedKmpH6630ProtocolCompanion, SharedKmpH663XXuanZhuan4BoBanTang, SharedKmpH663XBoDong4BoFeng, SharedKmpH663XYunRan4CaiQiang, SharedKmpH663XXuanZhuan4DaFengChe, SharedKmpH663XLiuDong4DieJia, SharedKmpH663XYunRan4FuGai, SharedKmpH663XXianXing4PenShe, SharedKmpH663XLiuDong4ShenSuo, SharedKmpH663XBoDong4ShuangLuoXuan, SharedKmpH663XSuiJi4TanChiShe, SharedKmpH663XSuiJi4TanTiaoQiu, SharedKmpH663XXianXing4TianChong, SharedKmpH663XXianXing4XiangSu, SharedKmpH663XSuiJi4XiaoXiaoLe, SharedKmpH663XSuiJi4YanHua, SharedKmpH6630Protocol, SharedKmpH663XAbsSub, SharedKmpH663XBoDong4BoFengCompanion, SharedKmpH663XBoDong4ShuangLuoXuanCompanion, SharedKmpH663XDirectionConfigCompanion, SharedKmpH663XJuLongKuoSanConfigCompanion, SharedKmpH663XLiuDong4DieJiaCompanion, SharedKmpH663XLiuDong4ShenSuoCompanion, SharedKmpH663XProtocolHelper, SharedKmpH663XSuiJi4TanChiSheCompanion, SharedKmpH663XSuiJi4TanTiaoQiuCompanion, SharedKmpH663XSuiJi4XiaoXiaoLeCompanion, SharedKmpH663XSuiJi4YanHuaCompanion, SharedKmpH663XXianXing4PenSheCompanion, SharedKmpH663XXianXing4TianChongCompanion, SharedKmpH663XXianXing4XiangSuCompanion, SharedKmpH663XXuanZhuan4BoBanTangCompanion, SharedKmpH663XXuanZhuan4DaFengCheCompanion, SharedKmpH663XYunRan4CaiQiangCompanion, SharedKmpH663XYunRan4FuGaiCompanion, SharedKmpH70CXBrightnessConfigCompanion, SharedKmpH70CXDirectionConfigCompanion, SharedKmpH70CXJiDianConfigCompanion, SharedKmpH70CXProtocolCompanion, SharedKmpH70CXProtocol, SharedKmpH70CXSubEffectConfigCompanion, SharedKmpH70CXLayerCompanion, SharedKmpH70CXLayer, SharedKmpH70CXAbsSub, SharedKmpH70CXSub4CaiHongCompanion, SharedKmpH70CXSub4CaiHong, SharedKmpH70CXSub4FenCengCompanion, SharedKmpH70CXSub4FenCeng, SharedKmpH70CXSub4HuoYanCompanion, SharedKmpH70CXSub4HuoYan, SharedKmpH70CXSub4KuoSanCompanion, SharedKmpH70CXSub4KuoSan, SharedKmpH70CXSub4LiuDongCompanion, SharedKmpH70CXSub4LiuDong, SharedKmpH70CXSub4LuoXuanCompanion, SharedKmpH70CXSub4LuoXuan, SharedKmpH70CXSub4MultiLayerCompanion, SharedKmpH70CXSub4MultiLayer, SharedKmpH70CXSub4TongXinYuanCompanion, SharedKmpH70CXSub4TongXinYuan, SharedKmpH70CXSub4XingGuangCompanion, SharedKmpH70CXSub4XingGuang, SharedKmpH70CXSub4XuanWoCompanion, SharedKmpH70CXSub4XuanWo, SharedKmpH70CXSub4XuanZhuanCompanion, SharedKmpH70CXSub4XuanZhuan, SharedKmpH70CXSub4ZhuiZhuCompanion, SharedKmpH70CXSub4ZhuiZhu, SharedKmpAreaMoveEffectCompanion, SharedKmpAreaMoveEffect, SharedKmpBrightnessEffectCompanion, SharedKmpBrightnessEffect, SharedKmpColorEffectCompanion, SharedKmpColorEffect, SharedKmpInAreaMoveEffectCompanion, SharedKmpInAreaMoveEffect, SharedKmpRgbICEffectCompanion, SharedKmpRgbICEffect, SharedKmpRgbICProtocolCompanion, SharedKmpRgbICProtocol, SharedKmpArrayUtils, SharedKotlinBooleanArray, SharedKotlinCharArray, SharedKotlinDoubleArray, SharedKotlinFloatArray, SharedKotlinLongArray, SharedKotlinShortArray, SharedKmpBleUtils, SharedKmpByteUtils, SharedKmpColorUtils, SharedKmpConstants, SharedKmpImageConverterManager, SharedKmpLog, SharedKmpLogManager, SharedKotlinx_serialization_jsonJsonElement, SharedKotlinx_serialization_jsonJson, SharedKotlinByteIterator, SharedKotlinIntIterator, SharedKotlinThrowable, SharedKotlinBooleanIterator, SharedKotlinCharIterator, SharedKotlinDoubleIterator, SharedKotlinFloatIterator, SharedKotlinLongIterator, SharedKotlinShortIterator, SharedKotlinx_serialization_jsonJsonElementCompanion, SharedKotlinx_serialization_coreSerializersModule, SharedKotlinx_serialization_jsonJsonDefault, SharedKotlinx_serialization_jsonJsonConfiguration, SharedKotlinx_serialization_coreSerialKind, SharedKotlinNothing, SharedKotlinx_serialization_jsonClassDiscriminatorMode;
 
 @protocol SharedIKmpProtocol, SharedKotlinx_serialization_coreKSerializer, SharedKotlinComparable, SharedKmpImageProcessor, SharedKmpLogProcessor, SharedKotlinx_serialization_coreEncoder, SharedKotlinx_serialization_coreSerialDescriptor, SharedKotlinx_serialization_coreSerializationStrategy, SharedKotlinx_serialization_coreDecoder, SharedKotlinx_serialization_coreDeserializationStrategy, SharedKotlinIterator, SharedKotlinx_serialization_coreSerialFormat, SharedKotlinx_serialization_coreStringFormat, SharedKotlinx_serialization_coreCompositeEncoder, SharedKotlinAnnotation, SharedKotlinx_serialization_coreCompositeDecoder, SharedKotlinx_serialization_coreSerializersModuleCollector, SharedKotlinKClass, SharedKotlinx_serialization_jsonJsonNamingStrategy, SharedKotlinKDeclarationContainer, SharedKotlinKAnnotatedElement, SharedKotlinKClassifier;
 
@@ -3146,6 +3146,33 @@ __attribute__((swift_name("KmpH70CXAbsSub")))
 @end
 
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH70CXLayer")))
+@interface SharedKmpH70CXLayer : SharedBase
+@property (class, readonly, getter=companion) SharedKmpH70CXLayerCompanion *companion __attribute__((swift_name("companion")));
+- (NSMutableArray<SharedByte *> * _Nullable)bytesPos:(int32_t)pos msg:(void (^)(NSString *))msg __attribute__((swift_name("bytes(pos:msg:)")));
+- (BOOL)changeSubEffectSubEffect:(int8_t)subEffect __attribute__((swift_name("changeSubEffect(subEffect:)")));
+- (NSMutableArray<SharedInt *> *)getLayerColors __attribute__((swift_name("getLayerColors()")));
+- (void)syncLayer:(SharedKmpH70CXLayer *)layer __attribute__((swift_name("sync(layer:)")));
+- (void)updateSpeedDirectionSpeed:(int32_t)speed direction:(int32_t)direction __attribute__((swift_name("updateSpeedDirection(speed:direction:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH70CXLayer.Companion")))
+@interface SharedKmpH70CXLayerCompanion : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedKmpH70CXLayerCompanion *shared __attribute__((swift_name("shared")));
+- (SharedKmpH70CXLayer *)makeDef __attribute__((swift_name("makeDef()")));
+
+/**
+ * @note This method converts instances of Exception to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (SharedKmpH70CXLayer * _Nullable)parseBytesLayerBytes:(SharedKotlinByteArray *)layerBytes error:(NSError * _Nullable * _Nullable)error __attribute__((swift_name("parseBytes(layerBytes:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("KmpH70CXSub4CaiHong")))
 @interface SharedKmpH70CXSub4CaiHong : SharedKmpH70CXAbsSub
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
@@ -3322,6 +3349,41 @@ __attribute__((swift_name("KmpH70CXSub4LuoXuan.Companion")))
 @end
 
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH70CXSub4MultiLayer")))
+@interface SharedKmpH70CXSub4MultiLayer : SharedKmpH70CXAbsSub
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (instancetype)new __attribute__((unavailable));
+@property (class, readonly, getter=companion) SharedKmpH70CXSub4MultiLayerCompanion *companion __attribute__((swift_name("companion")));
+- (void)addLayerLayer:(SharedKmpH70CXLayer *)layer __attribute__((swift_name("addLayer(layer:)")));
+- (NSMutableArray<SharedByte *> * _Nullable)bytesPos:(int32_t)pos msg:(void (^)(NSString *))msg __attribute__((swift_name("bytes(pos:msg:)")));
+- (BOOL)canShowLuBoDuration __attribute__((swift_name("canShowLuBoDuration()")));
+- (void)changeShowTypeShowType:(int8_t)showType __attribute__((swift_name("changeShowType(showType:)")));
+- (BOOL)deleteLayerPos:(int32_t)pos __attribute__((swift_name("deleteLayer(pos:)")));
+- (void)makeWithoutColorBytesBytes:(NSMutableArray<SharedByte *> *)bytes msg:(void (^)(NSString *))msg __attribute__((swift_name("makeWithoutColorBytes(bytes:msg:)")));
+- (SharedKmpH70CXLayer * _Nullable)queryLayerPos:(int32_t)pos __attribute__((swift_name("queryLayer(pos:)")));
+- (void)updateMultiLayerDirectionList:(SharedKotlinIntArray * _Nullable)directionList dirIndex:(int32_t)dirIndex multiLayerSpeeds:(NSArray<NSArray<SharedInt *> *> * _Nullable)multiLayerSpeeds speedIndex:(int32_t)speedIndex multiLayersDirectionRange:(NSArray<SharedInt *> * _Nullable)multiLayersDirectionRange __attribute__((swift_name("updateMultiLayer(directionList:dirIndex:multiLayerSpeeds:speedIndex:multiLayersDirectionRange:)")));
+@property int8_t lunBoDuration __attribute__((swift_name("lunBoDuration")));
+@property (readonly) int8_t showType __attribute__((swift_name("showType")));
+@property (readonly) NSMutableArray<SharedKmpH70CXLayer *> *subList __attribute__((swift_name("subList")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KmpH70CXSub4MultiLayer.Companion")))
+@interface SharedKmpH70CXSub4MultiLayerCompanion : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedKmpH70CXSub4MultiLayerCompanion *shared __attribute__((swift_name("shared")));
+- (SharedKmpH70CXSub4MultiLayer *)makeDefSub __attribute__((swift_name("makeDefSub()")));
+
+/**
+ * @note This method converts instances of Exception to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (SharedKmpH70CXSub4MultiLayer * _Nullable)parseSubEffectSubEffectBytes:(SharedKotlinByteArray *)subEffectBytes error:(NSError * _Nullable * _Nullable)error __attribute__((swift_name("parseSubEffect(subEffectBytes:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("KmpH70CXSub4TongXinYuan")))
 @interface SharedKmpH70CXSub4TongXinYuan : SharedKmpH70CXAbsSub
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
@@ -3462,68 +3524,6 @@ __attribute__((swift_name("KmpH70CXSub4ZhuiZhu.Companion")))
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (SharedKmpH70CXSub4ZhuiZhu * _Nullable)parseSubEffectSubEffectBytes:(SharedKotlinByteArray *)subEffectBytes error:(NSError * _Nullable * _Nullable)error __attribute__((swift_name("parseSubEffect(subEffectBytes:)")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Layer")))
-@interface SharedLayer : SharedBase
-@property (class, readonly, getter=companion) SharedLayerCompanion *companion __attribute__((swift_name("companion")));
-- (NSMutableArray<SharedByte *> * _Nullable)bytesPos:(int32_t)pos msg:(void (^)(NSString *))msg __attribute__((swift_name("bytes(pos:msg:)")));
-- (BOOL)changeSubEffectSubEffect:(int8_t)subEffect __attribute__((swift_name("changeSubEffect(subEffect:)")));
-- (NSMutableArray<SharedInt *> *)getLayerColors __attribute__((swift_name("getLayerColors()")));
-- (void)syncLayer:(SharedLayer *)layer __attribute__((swift_name("sync(layer:)")));
-- (void)updateSpeedDirectionSpeed:(int32_t)speed direction:(int32_t)direction __attribute__((swift_name("updateSpeedDirection(speed:direction:)")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Layer.Companion")))
-@interface SharedLayerCompanion : SharedBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) SharedLayerCompanion *shared __attribute__((swift_name("shared")));
-- (SharedLayer *)makeDef __attribute__((swift_name("makeDef()")));
-
-/**
- * @note This method converts instances of Exception to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (SharedLayer * _Nullable)parseBytesLayerBytes:(SharedKotlinByteArray *)layerBytes error:(NSError * _Nullable * _Nullable)error __attribute__((swift_name("parseBytes(layerBytes:)")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Sub4MultiLayer")))
-@interface SharedSub4MultiLayer : SharedKmpH70CXAbsSub
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
-+ (instancetype)new __attribute__((unavailable));
-@property (class, readonly, getter=companion) SharedSub4MultiLayerCompanion *companion __attribute__((swift_name("companion")));
-- (void)addLayerLayer:(SharedLayer *)layer __attribute__((swift_name("addLayer(layer:)")));
-- (NSMutableArray<SharedByte *> * _Nullable)bytesPos:(int32_t)pos msg:(void (^)(NSString *))msg __attribute__((swift_name("bytes(pos:msg:)")));
-- (BOOL)canShowLuBoDuration __attribute__((swift_name("canShowLuBoDuration()")));
-- (void)changeShowTypeShowType:(int8_t)showType __attribute__((swift_name("changeShowType(showType:)")));
-- (BOOL)deleteLayerPos:(int32_t)pos __attribute__((swift_name("deleteLayer(pos:)")));
-- (void)makeWithoutColorBytesBytes:(NSMutableArray<SharedByte *> *)bytes msg:(void (^)(NSString *))msg __attribute__((swift_name("makeWithoutColorBytes(bytes:msg:)")));
-- (SharedLayer * _Nullable)queryLayerPos:(int32_t)pos __attribute__((swift_name("queryLayer(pos:)")));
-- (void)updateMultiLayerDirectionList:(SharedKotlinIntArray * _Nullable)directionList dirIndex:(int32_t)dirIndex multiLayerSpeeds:(NSArray<NSArray<SharedInt *> *> * _Nullable)multiLayerSpeeds speedIndex:(int32_t)speedIndex multiLayersDirectionRange:(NSArray<SharedInt *> * _Nullable)multiLayersDirectionRange __attribute__((swift_name("updateMultiLayer(directionList:dirIndex:multiLayerSpeeds:speedIndex:multiLayersDirectionRange:)")));
-@property int8_t lunBoDuration __attribute__((swift_name("lunBoDuration")));
-@property (readonly) int8_t showType __attribute__((swift_name("showType")));
-@property (readonly) NSMutableArray<SharedLayer *> *subList __attribute__((swift_name("subList")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Sub4MultiLayer.Companion")))
-@interface SharedSub4MultiLayerCompanion : SharedBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) SharedSub4MultiLayerCompanion *shared __attribute__((swift_name("shared")));
-- (SharedSub4MultiLayer *)makeDefSub __attribute__((swift_name("makeDefSub()")));
-
-/**
- * @note This method converts instances of Exception to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (SharedSub4MultiLayer * _Nullable)parseSubEffectSubEffectBytes:(SharedKotlinByteArray *)subEffectBytes error:(NSError * _Nullable * _Nullable)error __attribute__((swift_name("parseSubEffect(subEffectBytes:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))

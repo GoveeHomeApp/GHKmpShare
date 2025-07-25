@@ -30,28 +30,27 @@ class IOSImageProcessorForKt: KmpImageProcessor {
               let cgImage = image.cgImage else {
             return []
         }
-        
+        // 使用ARGB格式匹配Android 注意 安卓bitmap alpha通道在前 数据格式为小端模式！！！
+        let bitmapInfo = CGImageAlphaInfo.premultipliedFirst.rawValue | CGBitmapInfo.byteOrder32Little.rawValue
         let width = cgImage.width
         let height = cgImage.height
         let colorSpace = CGColorSpaceCreateDeviceRGB()
         let bytesPerPixel = 4
         let bytesPerRow = bytesPerPixel * width
         let bitsPerComponent = 8
-        
         var pixelData = [UInt32](repeating: 0, count: width * height)
-        
         let context = CGContext(data: &pixelData,
                                width: width,
                                height: height,
                                bitsPerComponent: bitsPerComponent,
                                bytesPerRow: bytesPerRow,
                                space: colorSpace,
-                               bitmapInfo: CGImageAlphaInfo.noneSkipLast.rawValue)
-        
+                               bitmapInfo: bitmapInfo)
+
         context?.draw(cgImage, in: CGRect(x: 0, y: 0, width: width, height: height))
-        
         return pixelData.map { KotlinInt(value: Int32(bitPattern: $0)) }
     }
+    
     
     func convertColorsToPngBytes(colors: [KotlinInt], width: Int32, height: Int32) -> KotlinByteArray {
         let w = Int(width)
@@ -59,16 +58,15 @@ class IOSImageProcessorForKt: KmpImageProcessor {
         let colorSpace = CGColorSpaceCreateDeviceRGB()
         let bytesPerPixel = 4
         let bytesPerRow = bytesPerPixel * w
-        
+        let bitmapInfo = CGImageAlphaInfo.premultipliedFirst.rawValue | CGBitmapInfo.byteOrder32Little.rawValue
         var pixelData = colors.map { Int32($0.int32Value) }
-        
         guard let context = CGContext(data: &pixelData,
                                      width: w,
                                      height: h,
                                      bitsPerComponent: 8,
                                      bytesPerRow: bytesPerRow,
                                      space: colorSpace,
-                                     bitmapInfo: CGImageAlphaInfo.noneSkipLast.rawValue),
+                                     bitmapInfo: bitmapInfo),
               let cgImage = context.makeImage() else {
             return KotlinByteArray(size: 0)
         }
