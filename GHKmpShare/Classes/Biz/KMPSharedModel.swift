@@ -53,6 +53,9 @@ public class KmpSpeedVo:NSObject, HandyJSON {
     /// 档位调节-档位个数
     public var speedGearCount: Int = 0
     
+    /// 当前速度 注意当前默认的值有问题！！！
+    public var curSpeed: Int = -1
+    
     public required override init() { }
     
     public convenience init(speedType: Int, defSpeed: Int, speedRange: [Int]?, speedGearCount: Int) {
@@ -70,7 +73,7 @@ public class KmpDirectionVo:NSObject, HandyJSON {
     public var defIndex: Int = -1
     /// 支持的所有的方向的code
     public var supportDirections: [Int]? = nil
-    /// 注意当前默认的值有问题！！！
+    /// 当前方向 注意当前默认的值有问题！！！
     public var selIndex: Int = -1
     public required override init() { }
     
