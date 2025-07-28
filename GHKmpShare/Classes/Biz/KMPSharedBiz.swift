@@ -96,8 +96,8 @@ public class KMPSharedBiz: NSObject {
     public func changeDirection(code: Int = 0, param: [String: Any]?, device: [String: Any]?) -> String? {
         var res: String? = nil
         if self.isSupportSceneBiz(param: param, device: device), let pt = self.currentKmpProtocol, let bizParam = self.currentScene?.dto {
-            let speedConfig = bizParam.speedModel?["config"] as? String ?? ""
-            pt.updateDirection(directionOrIndex: KotlinInt(int: Int32(code)), config: speedConfig)
+//            let speedConfig = bizParam.speedModel?["config"] as? String ?? ""
+            pt.updateDirection(directionOrIndex: KotlinInt(int: Int32(code)), config: "")
             res = _getCurrentBytes()
         }
         return res
@@ -147,8 +147,8 @@ public class KMPSharedBiz: NSObject {
                 pt.updateSpeed(speedOrIndex: KotlinInt(int: Int32(spd)), config: speedConfig)
             }
             if let dir = directionVal, let bizParam = self.currentScene?.dto {
-                let speedConfig = bizParam.speedModel?["config"] as? String ?? ""
-                pt.updateDirection(directionOrIndex: KotlinInt(int: Int32(dir)), config: speedConfig)
+//                let speedConfig = bizParam.speedModel?["config"] as? String ?? ""
+                pt.updateDirection(directionOrIndex: KotlinInt(int: Int32(dir)), config: "")
             }
             if let h = colorH {
                 pt.updateColor(h: Float(h))
