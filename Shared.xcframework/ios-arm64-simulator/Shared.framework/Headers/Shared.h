@@ -1273,6 +1273,11 @@ __attribute__((swift_name("KmpH6020AbsSub")))
 */
 @property (readonly) NSString *TAG __attribute__((swift_name("TAG")));
 @property (readonly) NSMutableArray<SharedInt *> *colors __attribute__((swift_name("colors")));
+
+/**
+ * @note This property has protected visibility in Kotlin source and is intended only for use by subclasses.
+*/
+@property (readonly) float offsetH __attribute__((swift_name("offsetH")));
 @property int8_t speed __attribute__((swift_name("speed")));
 @end
 
@@ -1606,6 +1611,7 @@ __attribute__((swift_name("KmpH6020LianYi")))
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 + (instancetype)new __attribute__((unavailable));
 @property (class, readonly, getter=companion) SharedKmpH6020LianYiCompanion *companion __attribute__((swift_name("companion")));
+- (NSMutableArray<SharedInt *> *)getMainColors __attribute__((swift_name("getMainColors()")));
 - (BOOL)makeExtBytesBytes:(NSMutableArray<SharedByte *> *)bytes pos:(int32_t)pos __attribute__((swift_name("makeExtBytes(bytes:pos:)")));
 @property int32_t bgColor __attribute__((swift_name("bgColor")));
 @property int8_t circleNum __attribute__((swift_name("circleNum")));
@@ -1791,6 +1797,7 @@ __attribute__((swift_name("KmpH6020TanChiShe")))
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 + (instancetype)new __attribute__((unavailable));
 @property (class, readonly, getter=companion) SharedKmpH6020TanChiSheCompanion *companion __attribute__((swift_name("companion")));
+- (NSMutableArray<SharedInt *> *)getMainColors __attribute__((swift_name("getMainColors()")));
 - (BOOL)makeExtBytesBytes:(NSMutableArray<SharedByte *> *)bytes pos:(int32_t)pos __attribute__((swift_name("makeExtBytes(bytes:pos:)")));
 @property int8_t beans __attribute__((swift_name("beans")));
 @end
@@ -1817,6 +1824,7 @@ __attribute__((swift_name("KmpH6020TanTiaoQiu")))
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 + (instancetype)new __attribute__((unavailable));
 @property (class, readonly, getter=companion) SharedKmpH6020TanTiaoQiuCompanion *companion __attribute__((swift_name("companion")));
+- (NSMutableArray<SharedInt *> *)getMainColors __attribute__((swift_name("getMainColors()")));
 - (BOOL)makeExtBytesBytes:(NSMutableArray<SharedByte *> *)bytes pos:(int32_t)pos __attribute__((swift_name("makeExtBytes(bytes:pos:)")));
 @property int8_t ballNum __attribute__((swift_name("ballNum")));
 @property int8_t ballRadius __attribute__((swift_name("ballRadius")));
@@ -1898,6 +1906,7 @@ __attribute__((swift_name("KmpH6020YanHua")))
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 + (instancetype)new __attribute__((unavailable));
 @property (class, readonly, getter=companion) SharedKmpH6020YanHuaCompanion *companion __attribute__((swift_name("companion")));
+- (NSMutableArray<SharedInt *> *)getMainColors __attribute__((swift_name("getMainColors()")));
 - (BOOL)makeExtBytesBytes:(NSMutableArray<SharedByte *> *)bytes pos:(int32_t)pos __attribute__((swift_name("makeExtBytes(bytes:pos:)")));
 @end
 
@@ -1923,6 +1932,7 @@ __attribute__((swift_name("KmpH6020YueDong")))
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 + (instancetype)new __attribute__((unavailable));
 @property (class, readonly, getter=companion) SharedKmpH6020YueDongCompanion *companion __attribute__((swift_name("companion")));
+- (NSMutableArray<SharedInt *> *)getMainColors __attribute__((swift_name("getMainColors()")));
 - (BOOL)makeExtBytesBytes:(NSMutableArray<SharedByte *> *)bytes pos:(int32_t)pos __attribute__((swift_name("makeExtBytes(bytes:pos:)")));
 @end
 
