@@ -53,32 +53,18 @@ class IOSImageProcessorForKt: KmpImageProcessor {
     
     
     func convertColorsToPngBytes(colors: [KotlinInt], width: Int32, height: Int32) -> KotlinByteArray {
-        let w = Int(width)
-        let h = Int(height)
-        let colorSpace = CGColorSpaceCreateDeviceRGB()
-        let bytesPerPixel = 4
-        let bytesPerRow = bytesPerPixel * w
-        let bitmapInfo = CGImageAlphaInfo.premultipliedFirst.rawValue | CGBitmapInfo.byteOrder32Little.rawValue
-        var pixelData = colors.map { Int32($0.int32Value) }
-        guard let context = CGContext(data: &pixelData,
-                                     width: w,
-                                     height: h,
-                                     bitsPerComponent: 8,
-                                     bytesPerRow: bytesPerRow,
-                                     space: colorSpace,
-                                     bitmapInfo: bitmapInfo),
-              let cgImage = context.makeImage() else {
-            return KotlinByteArray(size: 0)
-        }
         
-        let image = UIImage(cgImage: cgImage)
-        guard let pngData = image.pngData() else {
+        let swiftArray = colors.compactMap { $0.toSwiftInt() }
+        
+        let data = KmpImgUtil.getPngImageData(width: UInt32(bitPattern: width), height: UInt32(bitPattern: height), argbColors: swiftArray)
+
+        guard data.count > 0 else {
             return KotlinByteArray(size: 0)
         }
         
         // 正确的KotlinByteArray构造方式
-        let byteArray = KotlinByteArray(size: Int32(pngData.count))
-        for (index, byte) in pngData.enumerated() {
+        let byteArray = KotlinByteArray(size: Int32(data.count))
+        for (index, byte) in data.enumerated() {
             byteArray.set(index: Int32(index), value: Int8(truncating: KotlinByte(value: Int8(bitPattern: byte))))
         }
         return byteArray
