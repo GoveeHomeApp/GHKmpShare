@@ -2518,7 +2518,7 @@ __attribute__((swift_name("KmpH663XAbsSub")))
 - (NSMutableArray<SharedByte *> * _Nullable)bytesPos:(int32_t)pos msg:(void (^)(NSString *))msg __attribute__((swift_name("bytes(pos:msg:)")));
 - (BOOL)makeExtBytesBytes:(NSMutableArray<SharedByte *> *)bytes pos:(int32_t)pos msg:(void (^)(NSString *))msg __attribute__((swift_name("makeExtBytes(bytes:pos:msg:)")));
 - (int32_t)minColorSize __attribute__((swift_name("minColorSize()")));
-- (void)updateColorHH:(SharedFloat * _Nullable)h __attribute__((swift_name("updateColorH(h:)")));
+- (void)updateColorHH:(float)h __attribute__((swift_name("updateColorH(h:)")));
 
 /**
  * @note This property has protected visibility in Kotlin source and is intended only for use by subclasses.
@@ -2534,7 +2534,7 @@ __attribute__((swift_name("KmpH663XAbsSub")))
 /**
  * @note This property has protected visibility in Kotlin source and is intended only for use by subclasses.
 */
-@property SharedFloat * _Nullable h __attribute__((swift_name("h")));
+@property float offsetH __attribute__((swift_name("offsetH")));
 @end
 
 __attribute__((objc_subclassing_restricted))
