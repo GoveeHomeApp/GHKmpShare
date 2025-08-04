@@ -901,7 +901,7 @@ __attribute__((swift_name("IKmpProtocol")))
 - (NSArray<SharedByte *> * _Nullable)bytes __attribute__((swift_name("bytes()")));
 - (SharedKmpToneColorListInfo *)getToneColors __attribute__((swift_name("getToneColors()")));
 - (void)resetColor __attribute__((swift_name("resetColor()")));
-- (void)updateColorH:(float)h __attribute__((swift_name("updateColor(h:)")));
+- (void)updateColorOffsetH:(float)offsetH __attribute__((swift_name("updateColor(offsetH:)")));
 - (void)updateDirectionDirectionOrIndex:(SharedInt * _Nullable)directionOrIndex config:(NSString * _Nullable)config __attribute__((swift_name("updateDirection(directionOrIndex:config:)")));
 - (void)updateSpeedSpeedOrIndex:(SharedInt * _Nullable)speedOrIndex config:(NSString * _Nullable)config __attribute__((swift_name("updateSpeed(speedOrIndex:config:)")));
 @end
@@ -911,12 +911,12 @@ __attribute__((swift_name("AbsKmpProtocol")))
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (void)resetColor __attribute__((swift_name("resetColor()")));
-- (void)updateColorH:(float)h __attribute__((swift_name("updateColor(h:)")));
+- (void)updateColorOffsetH:(float)offsetH __attribute__((swift_name("updateColor(offsetH:)")));
 
 /**
  * @note This property has protected visibility in Kotlin source and is intended only for use by subclasses.
 */
-@property SharedFloat * _Nullable h __attribute__((swift_name("h")));
+@property float offsetH __attribute__((swift_name("offsetH")));
 
 /**
  * @note This property has protected visibility in Kotlin source and is intended only for use by subclasses.
@@ -1273,11 +1273,7 @@ __attribute__((swift_name("KmpH6020AbsSub")))
 */
 @property (readonly) NSString *TAG __attribute__((swift_name("TAG")));
 @property (readonly) NSMutableArray<SharedInt *> *colors __attribute__((swift_name("colors")));
-
-/**
- * @note This property has protected visibility in Kotlin source and is intended only for use by subclasses.
-*/
-@property (readonly) float offsetH __attribute__((swift_name("offsetH")));
+@property float offsetH __attribute__((swift_name("offsetH")));
 @property int8_t speed __attribute__((swift_name("speed")));
 @end
 
@@ -1669,7 +1665,7 @@ __attribute__((swift_name("KmpH6020Protocol")))
 - (NSMutableArray<SharedByte *> * _Nullable)bytes __attribute__((swift_name("bytes()")));
 - (SharedKmpToneColorListInfo *)getToneColors __attribute__((swift_name("getToneColors()")));
 - (void)resetColor __attribute__((swift_name("resetColor()")));
-- (void)updateColorH:(float)h __attribute__((swift_name("updateColor(h:)")));
+- (void)updateColorOffsetH:(float)offsetH __attribute__((swift_name("updateColor(offsetH:)")));
 - (void)updateDirectionDirectionOrIndex:(SharedInt * _Nullable)directionOrIndex config:(NSString * _Nullable)config __attribute__((swift_name("updateDirection(directionOrIndex:config:)")));
 - (void)updateSpeedSpeedOrIndex:(SharedInt * _Nullable)speedOrIndex config:(NSString * _Nullable)config __attribute__((swift_name("updateSpeed(speedOrIndex:config:)")));
 @property SharedKmpH6020CaiHong * _Nullable caiHong __attribute__((swift_name("caiHong")));
@@ -2023,7 +2019,7 @@ __attribute__((swift_name("KmpH6063Protocol")))
 - (SharedKmpToneColorListInfo *)getToneColors __attribute__((swift_name("getToneColors()")));
 - (void)resetColor __attribute__((swift_name("resetColor()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-- (void)updateColorH:(float)h __attribute__((swift_name("updateColor(h:)")));
+- (void)updateColorOffsetH:(float)offsetH __attribute__((swift_name("updateColor(offsetH:)")));
 - (void)updateDirectionDirectionOrIndex:(SharedInt * _Nullable)directionOrIndex config:(NSString * _Nullable)config __attribute__((swift_name("updateDirection(directionOrIndex:config:)")));
 - (void)updateSpeedSpeed:(int32_t)speed __attribute__((swift_name("updateSpeed(speed:)")));
 - (void)updateSpeedSpeedOrIndex:(SharedInt * _Nullable)speedOrIndex config:(NSString * _Nullable)config __attribute__((swift_name("updateSpeed(speedOrIndex:config:)")));
@@ -2203,7 +2199,7 @@ __attribute__((swift_name("KmpH61DXProtocol")))
 - (NSMutableArray<SharedByte *> *)bytes __attribute__((swift_name("bytes()")));
 - (SharedKmpToneColorListInfo *)getToneColors __attribute__((swift_name("getToneColors()")));
 - (void)resetColor __attribute__((swift_name("resetColor()")));
-- (void)updateColorH:(float)h __attribute__((swift_name("updateColor(h:)")));
+- (void)updateColorOffsetH:(float)offsetH __attribute__((swift_name("updateColor(offsetH:)")));
 - (void)updateDirectionDirectionOrIndex:(SharedInt * _Nullable)directionOrIndex config:(NSString * _Nullable)config __attribute__((swift_name("updateDirection(directionOrIndex:config:)")));
 - (void)updateSpeedSpeedOrIndex:(SharedInt * _Nullable)speedOrIndex config:(NSString * _Nullable)config __attribute__((swift_name("updateSpeed(speedOrIndex:config:)")));
 @end
@@ -2461,7 +2457,7 @@ __attribute__((swift_name("KmpH6630GraffitiProtocol")))
 - (NSArray<SharedByte *> * _Nullable)bytes __attribute__((swift_name("bytes()")));
 - (SharedKmpToneColorListInfo *)getToneColors __attribute__((swift_name("getToneColors()")));
 - (void)resetColor __attribute__((swift_name("resetColor()")));
-- (void)updateColorH:(float)h __attribute__((swift_name("updateColor(h:)")));
+- (void)updateColorOffsetH:(float)offsetH __attribute__((swift_name("updateColor(offsetH:)")));
 - (void)updateDirectionDirectionOrIndex:(SharedInt * _Nullable)directionOrIndex config:(NSString * _Nullable)config __attribute__((swift_name("updateDirection(directionOrIndex:config:)")));
 - (void)updateSpeedSpeedOrIndex:(SharedInt * _Nullable)speedOrIndex config:(NSString * _Nullable)config __attribute__((swift_name("updateSpeed(speedOrIndex:config:)")));
 @end
@@ -3096,7 +3092,7 @@ __attribute__((swift_name("KmpH70CXProtocol")))
 - (SharedKmpToneColorListInfo *)getToneColors __attribute__((swift_name("getToneColors()")));
 - (void)makeDefSubSubCode:(int8_t)subCode __attribute__((swift_name("makeDefSub(subCode:)")));
 - (void)resetColor __attribute__((swift_name("resetColor()")));
-- (void)updateColorH:(float)h __attribute__((swift_name("updateColor(h:)")));
+- (void)updateColorOffsetH:(float)offsetH __attribute__((swift_name("updateColor(offsetH:)")));
 - (void)updateDirectionDirectionOrIndex:(SharedInt * _Nullable)directionOrIndex config:(NSString * _Nullable)config __attribute__((swift_name("updateDirection(directionOrIndex:config:)")));
 - (void)updateSpeedSpeedOrIndex:(SharedInt * _Nullable)speedOrIndex config:(NSString * _Nullable)config __attribute__((swift_name("updateSpeed(speedOrIndex:config:)")));
 @end
@@ -3921,7 +3917,7 @@ __attribute__((swift_name("KmpConstants")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)kmpConstants __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedKmpConstants *shared __attribute__((swift_name("shared")));
-@property (readonly) NSArray<SharedInt *> *H_LIST __attribute__((swift_name("H_LIST")));
+@property (readonly) NSArray<SharedInt *> *OFFSET_H_LIST __attribute__((swift_name("OFFSET_H_LIST")));
 @property (readonly) int32_t SCENE_TYPE_DIY __attribute__((swift_name("SCENE_TYPE_DIY")));
 @property (readonly) int32_t SCENE_TYPE_RGBIC __attribute__((swift_name("SCENE_TYPE_RGBIC")));
 @end
