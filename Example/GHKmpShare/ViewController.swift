@@ -22,10 +22,10 @@ class ViewController: UIViewController {
         
         let param: [String: Any] = [
             "config": "",
-            "base64": "UGsBFv/Tb2QAAALJAAG+AIlQTkcNChoKAAAADUlIRFIAAAAVAAAACwgCAAAAH6lRKgAAAIVJREFUKBXVT1sOgDAIg8Rr6uHmQSe0C8ON+O/iB5S+FPnB63hlUS3RDJo2VtWVf9h5RymgUu+Qy0CSy2Hn3WJVXrBoQi/yB0ea1+unsEWtnA1Emi/ORy/7nx6QHWZbZmZlzLDwzTmej8+GmIm4dQUSBwf5Yfw9vGJBdaRMyEVIyAjbAXkAuIFk3+CwiwQAAAAASUVORK5CYIIEWWQB7gcAAJUAAYoAiVBORw0KGgoAAAANSUhEUgAAABUAAAALCAIAAAAfqVEqAAAAUUlEQVQoFWNgIAT+zxMgpAQmP8dWEcYkTP+vBalhhCuEa045fB8uSBoDbgQubf8dg9CkEPajSWBy4ZoZ969DyOIJnv8a6MEBNwKhf5RFUQgAAIYmETmaKU5tAAAAAElFTkSuQmCCCzJkAvQBAAAA",
-            "configType": 5,
+            "base64": "UKQBFv/o4mQAAALLAAHAAIlQTkcNChoKAAAADUlIRFIAAAAVAAAACwgCAAAAH6lRKgAAAIdJREFUKBVjZMAA/xWcGB/swxAGCfwXyIaIM36YiqLgf+xeZP4z1//IXCAbrgBuBJoCBqC16EI4+HCzsMgjywGtwmkbFq3YhJCNQDYaohbqZDTfotmJn8sEMQnTCLg29KBGigVsLgaLwTXjVEGqBJoDgdoRwYFgQSxHikg0KbitmMbBpUhjAADEwTj/q4zyPQAAAABJRU5ErkJggghGZAH0AQAAzAABwQCJUE5HDQoaCgAAAA1JSERSAAAAFQAAAAsIAgAAAB+pUSoAAACISURBVCgVY/yfuZeBAsAE1Ms43RlOQoxCFkFmI8tC2Ogkfufgl0U3a5RPXAj8Z3BCU4gs8t+2Gi4LZ//PXAoRZAEJ6Wj9n87AYGsJZDBcucZw+DhQDqRi+lyIIoRxQJUMIPUgBSpBDK7BLBAOVDNQGCgHMQXIzkyG6AeRYD1Q7u61QJ0g9pVrAH2QLRHs7fjhAAAAAElFTkSuQmCCAyhkAmQAAAAA",
+            "configType": 2,
             "sceneCode": 20008,
-            "speedInfo": ["config": ""]
+            "speedModel": ["config": "{\"minSpeedValue\":30,\"overly\":[{\"speedValue\":70,\"layerFlag\":1,\"layerIndex\":0},{\"speedValue\":40,\"layerFlag\":2,\"layerIndex\":1}],\"maxSpeedValue\":98,\"currentSpeedValue\":70}"]
         ]
         let device: [String: Any] = [
             "sku": "H6020",
@@ -38,6 +38,8 @@ class ViewController: UIViewController {
             "deviceName": "sss"
         ]
         
+        let val = KMPSharedBiz.shared.changeAll(speedVal: 60, colorH: 30, param: param, device: device)
+        print(val)
         setupTableView()
         loadData(param: param, device: device)
     }

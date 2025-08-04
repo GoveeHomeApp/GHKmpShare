@@ -68,7 +68,7 @@ public class KMPSharedBiz: NSObject {
     public func changeColor(h: Float, param: [String: Any]?, device: [String: Any]?) -> String? {
         var res: String? = nil
         if self.isSupportSceneBiz(param: param, device: device), let pt = self.currentKmpProtocol {
-            pt.updateColor(h: h)
+            pt.updateColor(offsetH: h)
             res = _getCurrentBytes()
         }
         return res
@@ -151,7 +151,7 @@ public class KMPSharedBiz: NSObject {
                 pt.updateDirection(directionOrIndex: KotlinInt(int: Int32(dir)), config: "")
             }
             if let h = colorH {
-                pt.updateColor(h: Float(h))
+                pt.updateColor(offsetH: Float(h))
             }
             return _getCurrentBytes()
         } else {
